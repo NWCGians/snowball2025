@@ -1,1232 +1,758 @@
-<htmlxmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:x="urn:schemas-microsoft-com:office:excel"
-xmlns="http://www.w3.org/TR/REC-html40">
-
-<head>
-<metahttp-equiv=Content-Typecontent="text/html;charset=windows-1252">
-<metaname=ProgIdcontent=Excel.Sheet>
-<metaname=Generatorcontent="MicrosoftExcel15">
-<linkrel=File-Listhref="nwcg_snowball_jan_test_files/filelist.xml">
-<styleid="nwcg_snowball_jan_test_14731_Styles">
-<!--table
-	{mso-displayed-decimal-separator:"\.";
-	mso-displayed-thousand-separator:"\,";}
-.xl1514731
-	{padding-top:1px;
-	padding-right:1px;
-	padding-left:1px;
-	mso-ignore:padding;
-	color:black;
-	font-size:11.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri,sans-serif;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl6514731
-	{padding-top:1px;
-	padding-right:1px;
-	padding-left:1px;
-	mso-ignore:padding;
-	color:windowtext;
-	font-size:11.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	mso-number-format:General;
-	text-align:center;
-	vertical-align:top;
-	border:.5ptsolidwindowtext;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl6614731
-	{padding-top:1px;
-	padding-right:1px;
-	padding-left:1px;
-	mso-ignore:padding;
-	color:windowtext;
-	font-size:11.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	mso-number-format:"_*\#\,\#\#0\.00_\;_*\\-\#\,\#\#0\.00_\;_*\0022-\0022??_\;_\@_";
-	text-align:center;
-	vertical-align:top;
-	border:.5ptsolidwindowtext;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
-.xl6714731
-	{padding-top:1px;
-	padding-right:1px;
-	padding-left:1px;
-	mso-ignore:padding;
-	color:black;
-	font-size:11.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Calibri,sans-serif;
-	mso-font-charset:0;
-	mso-number-format:"_*\#\,\#\#0\.00_\;_*\\-\#\,\#\#0\.00_\;_*\0022-\0022??_\;_\@_";
-	text-align:general;
-	vertical-align:bottom;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	white-space:nowrap;}
--->
-</style>
-</head>
-
-<body>
-<!--[if!excel]>&nbsp;&nbsp;<![endif]-->
-<!--ThefollowinginformationwasgeneratedbyMicrosoftExcel'sPublishasWeb
-Pagewizard.-->
-<!--IfthesameitemisrepublishedfromExcel,allinformationbetweentheDIV
-tagswillbereplaced.-->
-<!----------------------------->
-<!--STARTOFOUTPUTFROMEXCELPUBLISHASWEBPAGEWIZARD-->
-<!----------------------------->
-
-<divid="nwcg_snowball_jan_test_14731"align=centerx:publishsource="Excel">
-
-<tableborder=0cellpadding=0cellspacing=0width=652style='border-collapse:
-collapse;table-layout:fixed;width:489pt'>
-<colwidth=72style='mso-width-source:userset;mso-width-alt:2560;width:54pt'>
-<colwidth=198style='mso-width-source:userset;mso-width-alt:7054;width:149pt'>
-<colclass=xl6714731width=92style='mso-width-source:userset;mso-width-alt:
-3271;width:69pt'>
-<colclass=xl6714731width=86style='mso-width-source:userset;mso-width-alt:
-3043;width:64pt'>
-<colclass=xl6714731width=88style='mso-width-source:userset;mso-width-alt:
-3128;width:66pt'>
-<colclass=xl6714731width=116style='mso-width-source:userset;mso-width-alt:
-4124;width:87pt'>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl6514731width=72style='height:14.4pt;width:54pt'>athlete_id</td>
-<tdclass=xl6514731width=198style='border-left:none;width:149pt'>Rider</td>
-<tdclass=xl6614731width=92style='border-left:none;width:69pt'><span
-style='mso-spacerun:yes'></span>January_Walk<span
-style='mso-spacerun:yes'></span></td>
-<tdclass=xl6614731width=86style='border-left:none;width:64pt'><span
-style='mso-spacerun:yes'></span>January_Run<span
-style='mso-spacerun:yes'></span></td>
-<tdclass=xl6614731width=88style='border-left:none;width:66pt'><span
-style='mso-spacerun:yes'></span>January_Ride<span
-style='mso-spacerun:yes'></span></td>
-<tdclass=xl6614731width=116style='border-left:none;width:87pt'><span
-style='mso-spacerun:yes'></span>TotalKMS<span
-style='mso-spacerun:yes'></span></td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>20811268</td>
-<tdclass=xl1514731>AbhishekSa</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>13.30</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>9.06</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>76.11</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>146423857</td>
-<tdclass=xl1514731>AbhishekSurbhat</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>2.13</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>17.91</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>78.00</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>79089690</td>
-<tdclass=xl1514731>AJ|OTS|</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>9.29</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>108.27</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>145.44</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>51887166</td>
-<tdclass=xl1514731>AnilKarnani</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.96</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>61.82
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>79.70</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>141188010</td>
-<tdclass=xl1514731>AnshumanMishra</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>18.93</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>25.26
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>82.06</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>113654674</td>
-<tdclass=xl1514731>archanaMuniraj</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>4.61</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>4.61</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>76316471</td>
-<tdclass=xl1514731>ArchanaRudra</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>6.23</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>118.08</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>136.78</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>12789525</td>
-<tdclass=xl1514731>ArnabChakraborty</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>17.43</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>52.30</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>73033736</td>
-<tdclass=xl1514731>ArushiDave</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.92</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>11.76</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>85027859</td>
-<tdclass=xl1514731>AshwinReddy</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>425.42</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>425.42</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>120726798</td>
-<tdclass=xl1514731>BalajiKannan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>59.56
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>59.56</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>18258275</td>
-<tdclass=xl1514731>BhushanPalhade@ENEL</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>0.95</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>4.02</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>6.88</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>89396510</td>
-<tdclass=xl1514731>BnilNath</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>270.70</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>270.70</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>138596691</td>
-<tdclass=xl1514731>ChanakyaChowdari</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>472.04</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>472.04</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>8009403</td>
-<tdclass=xl1514731>ChethanCJ</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.01</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>226.55</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>241.57</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>26228884</td>
-<tdclass=xl1514731>DeerendraCR<spanstyle='mso-spacerun:yes'></span>Team
-BCC<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>12.74</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>107.01</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>145.24</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>1609095</td>
-<tdclass=xl1514731>DileeshOnniyil</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>19.57</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>67.13
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>125.83</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>89491458</td>
-<tdclass=xl1514731>DineshBabuJothilingam</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>0.82</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.20</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>92.19
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>115.43</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>51167119</td>
-<tdclass=xl1514731>DnyaneshwarPawar</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>1.03</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>18.53</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>30.19
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>107.40</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>221000</td>
-<tdclass=xl1514731>DougMurphy</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>7.21</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>148.95</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>177.77</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>33965368</td>
-<tdclass=xl1514731>DRTUKARAMGADEKAR</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>346.56</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>346.56</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>152456461</td>
-<tdclass=xl1514731>DwijeshAthrey</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><span
-style='mso-spacerun:yes'></span>-<span
-style='mso-spacerun:yes'></span></td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>102975470</td>
-<tdclass=xl1514731>GaneshGowthamGuptha</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>218.63</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>218.63</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>44726894</td>
-<tdclass=xl1514731>GeetaManian</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>205.38</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>205.38</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>19779459</td>
-<tdclass=xl1514731>Giridhar&#128692;&#127995;&#8205;&#9792;&#65039;Team
-NWCG</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>2.40</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>267.37</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>276.97</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>26131471</td>
-<tdclass=xl1514731>GokulS</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>4.43</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.01</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>295.96</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>329.30</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>93788550</td>
-<tdclass=xl1514731>HeyramKruthik&#127470;&#127475;&#127470;&#127475;</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.85</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>76.38
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>93.92</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>13513751</td>
-<tdclass=xl1514731>JagdeepM</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><span
-style='mso-spacerun:yes'></span>-<span
-style='mso-spacerun:yes'></span></td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>102289276</td>
-<tdclass=xl1514731>JeyaViknesh</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>1.17</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.51</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>32470989</td>
-<tdclass=xl1514731>Kesavakrishnan(K7)</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><span
-style='mso-spacerun:yes'></span>-<span
-style='mso-spacerun:yes'></span></td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>66986677</td>
-<tdclass=xl1514731>KiranGopinadhan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>11.73</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>83.34
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>118.53</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>20824154</td>
-<tdclass=xl1514731>KiranNathH&#128692;&#127996;Chavittuvandi</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.07</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.07</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>39.69
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>75.19</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>155198261</td>
-<tdclass=xl1514731>LokeshKumarTS</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>22.78</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>7.80</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>99.55</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>83461364</td>
-<tdclass=xl1514731>MPeerMohamedSardhar</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>11.07</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>33.21</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>56978638</td>
-<tdclass=xl1514731>MadhuMandanna</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>22.44
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>22.44</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>89882106</td>
-<tdclass=xl1514731>MahaprabhuChockalingam</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>61.31</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>37.46
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>282.71</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>88231904</td>
-<tdclass=xl1514731>MahendraCh</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>2.91</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>319.10</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>330.72</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>105131592</td>
-<tdclass=xl1514731>MalteshDoddamani</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>7.20</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>21.60</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>41553110</td>
-<tdclass=xl1514731>ManojManoharan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>23.85</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>71.55</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>26425286</td>
-<tdclass=xl1514731>MeeraRamanarayanan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>6.59</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>212.48</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>232.25</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>134655629</td>
-<tdclass=xl1514731>MelvinGeorge</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>62.52
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>62.52</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>66351348</td>
-<tdclass=xl1514731>MeyyappanLakshmanan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>55.94</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>25.26
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>249.02</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>11461688</td>
-<tdclass=xl1514731>MiteshMoonat</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>2.97</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>54.62
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>63.51</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>146372140</td>
-<tdclass=xl1514731>MontyYadappa:&#127470;&#127475;TeamNWCG</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>1.08</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>350.15</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>353.38</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>66681541</td>
-<tdclass=xl1514731>MuthuLakshmanan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>1.38</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>4.15</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>8101716</td>
-<tdclass=xl1514731>MuthuRajSN</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>4.05</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>131.00</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>147.20</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>107553436</td>
-<tdclass=xl1514731>NageshwarReddy</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>12.20</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>230.87</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>267.48</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>106590102</td>
-<tdclass=xl1514731>NaveenNarayanan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>1.02</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>7.43</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>10.49</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>61476437</td>
-<tdclass=xl1514731>PachappanM
-&#127470;&#127475;&#127470;&#127475;&#127470;&#127475;</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.55</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>361.28</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>377.94</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>68902409</td>
-<tdclass=xl1514731>pawangupta</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>20.28</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>19.39
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>80.24</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>71790012</td>
-<tdclass=xl1514731>PradipTake#TeamIAS</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>33.79</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>7.53</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>81.38
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>212.84</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>30968537</td>
-<tdclass=xl1514731>PrasadPujari</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>206.54</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>206.54</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>154836562</td>
-<tdclass=xl1514731>PrathikshaB</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.94</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>11.82</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>96483346</td>
-<tdclass=xl1514731>PremC</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>10.40</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>31.19</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>139006932</td>
-<tdclass=xl1514731>PremankaMajumder</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>2.04</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>454.89</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>461.02</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>114409901</td>
-<tdclass=xl1514731>Priyavardhini:TeamNWCG</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.57</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>131.87</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>142.56</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>51597806</td>
-<tdclass=xl1514731>PuneethKakarla</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.31</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>12.24</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.83</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>70.72</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>21427761</td>
-<tdclass=xl1514731>RadhaMadhava</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>28.79</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>44.51
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>130.90</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>36029179</td>
-<tdclass=xl1514731>RajanATR</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>290.77</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>290.77</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>42587336</td>
-<tdclass=xl1514731>RajeshKarunakaran</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>10.25</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>41.01</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>41530812</td>
-<tdclass=xl1514731>RajuBN</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>16.46</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>184.57</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>250.39</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>61679552</td>
-<tdclass=xl1514731>Rakeshkumar</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>14.23</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>23.96</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>138.53</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>108332975</td>
-<tdclass=xl1514731>RambabuDola</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.45</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>240.74</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>251.07</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>102215387</td>
-<tdclass=xl1514731>Ramji.</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>77.22
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>77.22</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>74101248</td>
-<tdclass=xl1514731>RangaRaj&#127470;&#127475;</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>6.16</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>24.64</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>46405358</td>
-<tdclass=xl1514731>RoshanGanapathy</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>303.13</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>303.13</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>90043281</td>
-<tdclass=xl1514731>RupeshPV</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>27.86
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>27.86</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>76447642</td>
-<tdclass=xl1514731>SachinMudholkar&#127470;&#127475;</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>255.20</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>255.20</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>105832797</td>
-<tdclass=xl1514731>SachinShinde
-&#127946;&#128692;&#127939;&#127470;&#127475;</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.01</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>304.68</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>319.71</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>90116969</td>
-<tdclass=xl1514731>SanjoJose</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>11.74</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>128.40</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>163.61</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>128126299</td>
-<tdclass=xl1514731>SatheeshVeerapandian</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>10.55
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>10.55</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>66035989</td>
-<tdclass=xl1514731>SatishB</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>6.08</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>261.07</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>279.32</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>43566033</td>
-<tdclass=xl1514731>SenthilKumarJ&#127802;</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.68</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>253.76</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>270.80</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>101635745</td>
-<tdclass=xl1514731>ShaliniVerma</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>4.12</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.09</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>52.24
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>76.95</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>78216959</td>
-<tdclass=xl1514731>ShanmugamAvudaiyappan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>6.34</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>19.03</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>37757732</td>
-<tdclass=xl1514731>ShashankHunsur|Maverick&#127775;</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>10.33</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.00</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>153.16</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>204.17</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>64083750</td>
-<tdclass=xl1514731>ShreyasSK</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.34</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>10.03</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>11732772</td>
-<tdclass=xl1514731>ShubhadeepSarkar</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>16.87</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>50.61</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>24768476</td>
-<tdclass=xl1514731>SiddhantBahuguna</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>1.10</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>1.30</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>8.51</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>106691740</td>
-<tdclass=xl1514731>Srika(&#3000;&#3021;&#2992;&#3008;&#2965;&#3006;)</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>60.07
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>60.07</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>39035808</td>
-<tdclass=xl1514731>SubhransuSethi</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>5.22</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>15.67</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>23837468</td>
-<tdclass=xl1514731>SuchitaMalhotra</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>9.64</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>22.54</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>119.11</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>101569751</td>
-<tdclass=xl1514731>SudhakarGopalan</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>25.67</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>77.02</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>43540882</td>
-<tdclass=xl1514731>sudhakarRamakrishnan&#127470;&#127475;</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>7.84</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>10.52</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>65.61</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>100986868</td>
-<tdclass=xl1514731>SudhanNaik</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>7.00</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>170.00</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>191.00</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>75584500</td>
-<tdclass=xl1514731>SudhirReddy</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>2.73</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>7.07</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>15.26</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>20340436</td>
-<tdclass=xl1514731>SwathiPriya</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>14.85</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>70.94
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>115.48</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>35369511</td>
-<tdclass=xl1514731>TandavaVenkataKrishnaPopuri</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>6.54</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>319.05</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>338.66</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>76953471</td>
-<tdclass=xl1514731>ThiruB</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>267.36</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>267.36</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>104852815</td>
-<tdclass=xl1514731>UdayRaju</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><span
-style='mso-spacerun:yes'></span>-<span
-style='mso-spacerun:yes'></span></td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>12636156</td>
-<tdclass=xl1514731>VenuGopalMaddula</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.05</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>380.14</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>389.28</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>45934411</td>
-<tdclass=xl1514731>VijayPrasadSR</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.95</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'></span>83.76
-</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>95.59</td>
-</tr>
-<trheight=19style='height:14.4pt'>
-<tdheight=19class=xl1514731align=rightstyle='height:14.4pt'>13752604</td>
-<tdclass=xl1514731>VinyasRai</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>3.52</td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>-<spanstyle='mso-spacerun:yes'></span></td>
-<tdclass=xl6714731><spanstyle='mso-spacerun:yes'>
-</span>10.57</td>
-</tr>
-<![ifsupportMisalignedColumns]>
-<trheight=0style='display:none'>
-<tdwidth=72style='width:54pt'></td>
-<tdwidth=198style='width:149pt'></td>
-<tdwidth=92style='width:69pt'></td>
-<tdwidth=86style='width:64pt'></td>
-<tdwidth=88style='width:66pt'></td>
-<tdwidth=116style='width:87pt'></td>
-</tr>
-<![endif]>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>athlete_id</th>
+      <th>Rider</th>
+      <th>January_Walk</th>
+      <th>January_Run</th>
+      <th>January_Ride</th>
+      <th>Total KMS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20811268</td>
+      <td>Abhishek Sa</td>
+      <td>13.2960</td>
+      <td>9.0557</td>
+      <td>0.0000</td>
+      <td>76.1108</td>
+    </tr>
+    <tr>
+      <td>146423857</td>
+      <td>Abhishek Surbhat</td>
+      <td>2.1261</td>
+      <td>17.9054</td>
+      <td>0.0000</td>
+      <td>77.9999</td>
+    </tr>
+    <tr>
+      <td>79089690</td>
+      <td>AJ | OTS |</td>
+      <td>0.0000</td>
+      <td>9.2909</td>
+      <td>108.2720</td>
+      <td>145.4356</td>
+    </tr>
+    <tr>
+      <td>51887166</td>
+      <td>Anil Karnani</td>
+      <td>5.9625</td>
+      <td>0.0000</td>
+      <td>61.8171</td>
+      <td>79.7046</td>
+    </tr>
+    <tr>
+      <td>141188010</td>
+      <td>Anshuman Mishra</td>
+      <td>18.9328</td>
+      <td>0.0000</td>
+      <td>25.2566</td>
+      <td>82.0550</td>
+    </tr>
+    <tr>
+      <td>113654674</td>
+      <td>archana Muniraj</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>4.6097</td>
+      <td>4.6097</td>
+    </tr>
+    <tr>
+      <td>76316471</td>
+      <td>Archana Rudra</td>
+      <td>6.2337</td>
+      <td>0.0000</td>
+      <td>118.0770</td>
+      <td>136.7781</td>
+    </tr>
+    <tr>
+      <td>12789525</td>
+      <td>Arnab Chakraborty</td>
+      <td>17.4328</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>52.2984</td>
+    </tr>
+    <tr>
+      <td>73033736</td>
+      <td>Arushi Dave</td>
+      <td>3.9208</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>11.7624</td>
+    </tr>
+    <tr>
+      <td>85027859</td>
+      <td>Ashwin Reddy</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>425.4194</td>
+      <td>425.4194</td>
+    </tr>
+    <tr>
+      <td>120726798</td>
+      <td>Balaji Kannan</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>59.5593</td>
+      <td>59.5593</td>
+    </tr>
+    <tr>
+      <td>18258275</td>
+      <td>Bhushan Palhade @ENEL</td>
+      <td>0.9503</td>
+      <td>0.0000</td>
+      <td>4.0248</td>
+      <td>6.8757</td>
+    </tr>
+    <tr>
+      <td>89396510</td>
+      <td>Bnil Nath</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>270.7038</td>
+      <td>270.7038</td>
+    </tr>
+    <tr>
+      <td>138596691</td>
+      <td>Chanakya Chowdari</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>472.0379</td>
+      <td>472.0379</td>
+    </tr>
+    <tr>
+      <td>8009403</td>
+      <td>Chethan CJ</td>
+      <td>5.0060</td>
+      <td>0.0000</td>
+      <td>226.5545</td>
+      <td>241.5725</td>
+    </tr>
+    <tr>
+      <td>26228884</td>
+      <td>Deerendra CR  Team BCC ®</td>
+      <td>12.7447</td>
+      <td>0.0000</td>
+      <td>107.0108</td>
+      <td>145.2449</td>
+    </tr>
+    <tr>
+      <td>1609095</td>
+      <td>Dileesh Onniyil</td>
+      <td>19.5686</td>
+      <td>0.0000</td>
+      <td>67.1264</td>
+      <td>125.8322</td>
+    </tr>
+    <tr>
+      <td>89491458</td>
+      <td>Dinesh Babu Jothilingam</td>
+      <td>0.8202</td>
+      <td>5.1950</td>
+      <td>92.1888</td>
+      <td>115.4294</td>
+    </tr>
+    <tr>
+      <td>51167119</td>
+      <td>Dnyaneshwar Pawar</td>
+      <td>1.0268</td>
+      <td>18.5322</td>
+      <td>30.1935</td>
+      <td>107.4027</td>
+    </tr>
+    <tr>
+      <td>221000</td>
+      <td>Doug Murphy</td>
+      <td>0.0000</td>
+      <td>7.2052</td>
+      <td>148.9517</td>
+      <td>177.7725</td>
+    </tr>
+    <tr>
+      <td>33965368</td>
+      <td>DR TUKARAM GADEKAR</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>346.5603</td>
+      <td>346.5603</td>
+    </tr>
+    <tr>
+      <td>152456461</td>
+      <td>Dwijesh Athrey</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>102975470</td>
+      <td>Ganesh Gowtham Guptha</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>218.6318</td>
+      <td>218.6318</td>
+    </tr>
+    <tr>
+      <td>44726894</td>
+      <td>Geeta Manian</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>205.3846</td>
+      <td>205.3846</td>
+    </tr>
+    <tr>
+      <td>19779459</td>
+      <td>Giridhar 🚴🏻‍♀️ Team NWCG</td>
+      <td>0.0000</td>
+      <td>2.4000</td>
+      <td>267.3731</td>
+      <td>276.9731</td>
+    </tr>
+    <tr>
+      <td>26131471</td>
+      <td>Gokul S</td>
+      <td>4.4306</td>
+      <td>5.0133</td>
+      <td>295.9598</td>
+      <td>329.3048</td>
+    </tr>
+    <tr>
+      <td>93788550</td>
+      <td>Heyram Kruthik 🇮🇳🇮🇳</td>
+      <td>5.8480</td>
+      <td>0.0000</td>
+      <td>76.3764</td>
+      <td>93.9204</td>
+    </tr>
+    <tr>
+      <td>13513751</td>
+      <td>Jagdeep M</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>102289276</td>
+      <td>Jeya Viknesh</td>
+      <td>1.1716</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>3.5148</td>
+    </tr>
+    <tr>
+      <td>32470989</td>
+      <td>Kesavakrishnan (K7)</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>66986677</td>
+      <td>Kiran Gopinadhan</td>
+      <td>11.7302</td>
+      <td>0.0000</td>
+      <td>83.3389</td>
+      <td>118.5295</td>
+    </tr>
+    <tr>
+      <td>20824154</td>
+      <td>Kiran Nath H 🚴🏼 Chavittuvandi</td>
+      <td>5.0667</td>
+      <td>5.0734</td>
+      <td>39.6947</td>
+      <td>75.1884</td>
+    </tr>
+    <tr>
+      <td>155198261</td>
+      <td>Lokesh Kumar TS</td>
+      <td>22.7798</td>
+      <td>7.8030</td>
+      <td>0.0000</td>
+      <td>99.5514</td>
+    </tr>
+    <tr>
+      <td>83461364</td>
+      <td>M Peer Mohamed Sardhar</td>
+      <td>11.0693</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>33.2079</td>
+    </tr>
+    <tr>
+      <td>56978638</td>
+      <td>Madhu Mandanna</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>22.4434</td>
+      <td>22.4434</td>
+    </tr>
+    <tr>
+      <td>89882106</td>
+      <td>Mahaprabhu Chockalingam</td>
+      <td>0.0000</td>
+      <td>61.3133</td>
+      <td>37.4558</td>
+      <td>282.7090</td>
+    </tr>
+    <tr>
+      <td>88231904</td>
+      <td>Mahendra Ch</td>
+      <td>0.0000</td>
+      <td>2.9074</td>
+      <td>319.0951</td>
+      <td>330.7247</td>
+    </tr>
+    <tr>
+      <td>105131592</td>
+      <td>Maltesh Doddamani</td>
+      <td>7.2004</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>21.6012</td>
+    </tr>
+    <tr>
+      <td>41553110</td>
+      <td>Manoj Manoharan</td>
+      <td>23.8514</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>71.5542</td>
+    </tr>
+    <tr>
+      <td>26425286</td>
+      <td>Meera Ramanarayanan</td>
+      <td>6.5882</td>
+      <td>0.0000</td>
+      <td>212.4846</td>
+      <td>232.2492</td>
+    </tr>
+    <tr>
+      <td>134655629</td>
+      <td>Melvin George</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>62.5170</td>
+      <td>62.5170</td>
+    </tr>
+    <tr>
+      <td>66351348</td>
+      <td>Meyyappan Lakshmanan</td>
+      <td>0.0000</td>
+      <td>55.9381</td>
+      <td>25.2637</td>
+      <td>249.0161</td>
+    </tr>
+    <tr>
+      <td>11461688</td>
+      <td>Mitesh Moonat</td>
+      <td>2.9652</td>
+      <td>0.0000</td>
+      <td>54.6154</td>
+      <td>63.5110</td>
+    </tr>
+    <tr>
+      <td>146372140</td>
+      <td>Monty Yadappa:🇮🇳 Team NWCG</td>
+      <td>1.0759</td>
+      <td>0.0000</td>
+      <td>350.1491</td>
+      <td>353.3768</td>
+    </tr>
+    <tr>
+      <td>66681541</td>
+      <td>Muthu Lakshmanan</td>
+      <td>1.3819</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>4.1457</td>
+    </tr>
+    <tr>
+      <td>8101716</td>
+      <td>MuthuRaj SN</td>
+      <td>0.0000</td>
+      <td>4.0496</td>
+      <td>131.0027</td>
+      <td>147.2011</td>
+    </tr>
+    <tr>
+      <td>107553436</td>
+      <td>Nageshwar Reddy</td>
+      <td>12.2021</td>
+      <td>0.0000</td>
+      <td>230.8727</td>
+      <td>267.4790</td>
+    </tr>
+    <tr>
+      <td>106590102</td>
+      <td>Naveen Narayanan</td>
+      <td>1.0190</td>
+      <td>0.0000</td>
+      <td>7.4305</td>
+      <td>10.4875</td>
+    </tr>
+    <tr>
+      <td>61476437</td>
+      <td>Pachappan M 🇮🇳🇮🇳🇮🇳</td>
+      <td>5.5514</td>
+      <td>0.0000</td>
+      <td>361.2824</td>
+      <td>377.9366</td>
+    </tr>
+    <tr>
+      <td>68902409</td>
+      <td>pawan gupta</td>
+      <td>20.2815</td>
+      <td>0.0000</td>
+      <td>19.3948</td>
+      <td>80.2393</td>
+    </tr>
+    <tr>
+      <td>71790012</td>
+      <td>Pradip Take #Team IAS</td>
+      <td>33.7866</td>
+      <td>7.5262</td>
+      <td>81.3801</td>
+      <td>212.8447</td>
+    </tr>
+    <tr>
+      <td>30968537</td>
+      <td>Prasad Pujari</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>206.5363</td>
+      <td>206.5363</td>
+    </tr>
+    <tr>
+      <td>154836562</td>
+      <td>Prathiksha B</td>
+      <td>3.9398</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>11.8194</td>
+    </tr>
+    <tr>
+      <td>96483346</td>
+      <td>Prem C</td>
+      <td>10.3982</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>31.1946</td>
+    </tr>
+    <tr>
+      <td>139006932</td>
+      <td>Premanka Majumder</td>
+      <td>2.0446</td>
+      <td>0.0000</td>
+      <td>454.8900</td>
+      <td>461.0238</td>
+    </tr>
+    <tr>
+      <td>114409901</td>
+      <td>Priyavardhini: Team NWCG</td>
+      <td>3.5652</td>
+      <td>0.0000</td>
+      <td>131.8657</td>
+      <td>142.5613</td>
+    </tr>
+    <tr>
+      <td>51597806</td>
+      <td>Puneeth Kakarla</td>
+      <td>5.3108</td>
+      <td>12.2416</td>
+      <td>5.8259</td>
+      <td>70.7247</td>
+    </tr>
+    <tr>
+      <td>21427761</td>
+      <td>Radha Madhava</td>
+      <td>28.7948</td>
+      <td>0.0000</td>
+      <td>44.5128</td>
+      <td>130.8972</td>
+    </tr>
+    <tr>
+      <td>36029179</td>
+      <td>Rajan ATR</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>290.7692</td>
+      <td>290.7692</td>
+    </tr>
+    <tr>
+      <td>42587336</td>
+      <td>Rajesh Karunakaran</td>
+      <td>0.0000</td>
+      <td>10.2536</td>
+      <td>0.0000</td>
+      <td>41.0144</td>
+    </tr>
+    <tr>
+      <td>41530812</td>
+      <td>Raju BN</td>
+      <td>0.0000</td>
+      <td>16.4558</td>
+      <td>184.5690</td>
+      <td>250.3922</td>
+    </tr>
+    <tr>
+      <td>61679552</td>
+      <td>Rakesh kumar</td>
+      <td>14.2322</td>
+      <td>23.9587</td>
+      <td>0.0000</td>
+      <td>138.5314</td>
+    </tr>
+    <tr>
+      <td>108332975</td>
+      <td>Rambabu Dola</td>
+      <td>3.4460</td>
+      <td>0.0000</td>
+      <td>240.7351</td>
+      <td>251.0731</td>
+    </tr>
+    <tr>
+      <td>102215387</td>
+      <td>Ramji .</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>77.2240</td>
+      <td>77.2240</td>
+    </tr>
+    <tr>
+      <td>74101248</td>
+      <td>Ranga Raj 🇮🇳</td>
+      <td>0.0000</td>
+      <td>6.1605</td>
+      <td>0.0000</td>
+      <td>24.6420</td>
+    </tr>
+    <tr>
+      <td>46405358</td>
+      <td>Roshan Ganapathy</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>303.1305</td>
+      <td>303.1305</td>
+    </tr>
+    <tr>
+      <td>90043281</td>
+      <td>Rupesh P V</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>27.8641</td>
+      <td>27.8641</td>
+    </tr>
+    <tr>
+      <td>76447642</td>
+      <td>Sachin Mudholkar 🇮🇳</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>255.1981</td>
+      <td>255.1981</td>
+    </tr>
+    <tr>
+      <td>105832797</td>
+      <td>Sachin Shinde 🏊🚴🏃🇮🇳</td>
+      <td>5.0080</td>
+      <td>0.0000</td>
+      <td>304.6813</td>
+      <td>319.7053</td>
+    </tr>
+    <tr>
+      <td>90116969</td>
+      <td>Sanjo Jose</td>
+      <td>11.7351</td>
+      <td>0.0000</td>
+      <td>128.4040</td>
+      <td>163.6093</td>
+    </tr>
+    <tr>
+      <td>128126299</td>
+      <td>Satheesh Veerapandian</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>10.5523</td>
+      <td>10.5523</td>
+    </tr>
+    <tr>
+      <td>66035989</td>
+      <td>Satish B</td>
+      <td>6.0847</td>
+      <td>0.0000</td>
+      <td>261.0680</td>
+      <td>279.3221</td>
+    </tr>
+    <tr>
+      <td>43566033</td>
+      <td>Senthil Kumar J 🌺</td>
+      <td>5.6788</td>
+      <td>0.0000</td>
+      <td>253.7623</td>
+      <td>270.7987</td>
+    </tr>
+    <tr>
+      <td>101635745</td>
+      <td>Shalini Verma</td>
+      <td>4.1225</td>
+      <td>3.0856</td>
+      <td>52.2426</td>
+      <td>76.9525</td>
+    </tr>
+    <tr>
+      <td>78216959</td>
+      <td>Shanmugam Avudaiyappan</td>
+      <td>6.3429</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>19.0287</td>
+    </tr>
+    <tr>
+      <td>37757732</td>
+      <td>Shashank Hunsur | Maverick 🌟</td>
+      <td>10.3348</td>
+      <td>5.0020</td>
+      <td>153.1609</td>
+      <td>204.1733</td>
+    </tr>
+    <tr>
+      <td>64083750</td>
+      <td>Shreyas SK</td>
+      <td>3.3431</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>10.0293</td>
+    </tr>
+    <tr>
+      <td>11732772</td>
+      <td>Shubhadeep Sarkar</td>
+      <td>16.8698</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>50.6094</td>
+    </tr>
+    <tr>
+      <td>24768476</td>
+      <td>Siddhant Bahuguna</td>
+      <td>1.0965</td>
+      <td>1.3042</td>
+      <td>0.0000</td>
+      <td>8.5063</td>
+    </tr>
+    <tr>
+      <td>106691740</td>
+      <td>Srika (ஸ்ரீகா)</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>60.0742</td>
+      <td>60.0742</td>
+    </tr>
+    <tr>
+      <td>39035808</td>
+      <td>Subhransu Sethi</td>
+      <td>5.2219</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>15.6657</td>
+    </tr>
+    <tr>
+      <td>23837468</td>
+      <td>Suchita Malhotra</td>
+      <td>9.6421</td>
+      <td>22.5448</td>
+      <td>0.0000</td>
+      <td>119.1055</td>
+    </tr>
+    <tr>
+      <td>101569751</td>
+      <td>Sudhakar Gopalan</td>
+      <td>25.6725</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>77.0175</td>
+    </tr>
+    <tr>
+      <td>43540882</td>
+      <td>sudhakar Ramakrishnan 🇮🇳</td>
+      <td>7.8380</td>
+      <td>10.5248</td>
+      <td>0.0000</td>
+      <td>65.6132</td>
+    </tr>
+    <tr>
+      <td>100986868</td>
+      <td>Sudhan Naik</td>
+      <td>7.0017</td>
+      <td>0.0000</td>
+      <td>169.9997</td>
+      <td>191.0048</td>
+    </tr>
+    <tr>
+      <td>75584500</td>
+      <td>Sudhir Reddy</td>
+      <td>2.7296</td>
+      <td>0.0000</td>
+      <td>7.0708</td>
+      <td>15.2596</td>
+    </tr>
+    <tr>
+      <td>20340436</td>
+      <td>Swathi Priya</td>
+      <td>14.8455</td>
+      <td>0.0000</td>
+      <td>70.9392</td>
+      <td>115.4757</td>
+    </tr>
+    <tr>
+      <td>35369511</td>
+      <td>Tandava Venkata Krishna Popuri</td>
+      <td>6.5361</td>
+      <td>0.0000</td>
+      <td>319.0543</td>
+      <td>338.6626</td>
+    </tr>
+    <tr>
+      <td>76953471</td>
+      <td>Thiru B</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>267.3649</td>
+      <td>267.3649</td>
+    </tr>
+    <tr>
+      <td>104852815</td>
+      <td>Uday Raju</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>12636156</td>
+      <td>VenuGopal Maddula</td>
+      <td>3.0463</td>
+      <td>0.0000</td>
+      <td>380.1377</td>
+      <td>389.2766</td>
+    </tr>
+    <tr>
+      <td>45934411</td>
+      <td>Vijay Prasad SR</td>
+      <td>3.9459</td>
+      <td>0.0000</td>
+      <td>83.7561</td>
+      <td>95.5938</td>
+    </tr>
+    <tr>
+      <td>13752604</td>
+      <td>Vinyas Rai</td>
+      <td>3.5218</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>10.5654</td>
+    </tr>
+  </tbody>
 </table>
-
-</div>
-
-
-<!----------------------------->
-<!--ENDOFOUTPUTFROMEXCELPUBLISHASWEBPAGEWIZARD-->
-<!----------------------------->
-</body>
-
-</html>
