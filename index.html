@@ -1,1212 +1,2439 @@
-<!DOCTYPE html>
-<html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
 <head>
-<meta charset='UTF-8'>
-<title>Excel Data</title>
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        margin: 20px auto;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: center;
-    }
-    th {
-        background-color: #f2f2f2;
-        color: #333;
-    }
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-    tr:hover {
-        background-color: #f1f1f1;
-    }
-    .table {
-        width: 95%;
-        margin: auto;
-    }
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link rel=File-List href="nwcg_snowball_kms_2101_files/filelist.xml">
+<style id="nwcg_snowball_kms_2101_6146_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl156146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl656146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl666146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl676146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl686146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0_ \;_ * \\-\#\,\#\#0_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl696146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0_ \;_ * \\-\#\,\#\#0_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl706146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl716146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl726146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0_ \;_ * \\-\#\,\#\#0_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl736146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:#92D050;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl746146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:general;
+	vertical-align:bottom;
+	border:.5pt solid windowtext;
+	background:red;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl756146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl766146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	text-align:center;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl776146
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+-->
 </style>
-
 </head>
+
 <body>
-<table class="dataframe table table-bordered">
-  <thead>
-    <tr style="text-align: right;">
-      <th>athlete_id</th>
-      <th>Athelete</th>
-      <th>Walk</th>
-      <th>Run</th>
-      <th>Ride</th>
-      <th>Total KMS</th>
-      <th>Category</th>
-      <th>Target</th>
-      <th>Pending KMS</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>146423857</td>
-      <td>Abhishek Surbhat</td>
-      <td>4.9864</td>
-      <td>35.0922</td>
-      <td>0.0000</td>
-      <td>155.3280</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>94.6720</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>79089690</td>
-      <td>AJ | OTS |</td>
-      <td>0.0000</td>
-      <td>40.6289</td>
-      <td>248.7611</td>
-      <td>411.2767</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-61.2767</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>51887166</td>
-      <td>Anil Karnani</td>
-      <td>18.6306</td>
-      <td>0.0000</td>
-      <td>133.6642</td>
-      <td>189.5560</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>60.4440</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>141188010</td>
-      <td>Anshuman Mishra</td>
-      <td>58.5021</td>
-      <td>17.2133</td>
-      <td>186.2178</td>
-      <td>430.5773</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-80.5773</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>76316471</td>
-      <td>Archana Rudra</td>
-      <td>32.1205</td>
-      <td>0.0000</td>
-      <td>504.7437</td>
-      <td>601.1052</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-251.1052</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>113654674</td>
-      <td>archana Muniraj</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>143.1836</td>
-      <td>143.1836</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>106.8164</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>12789525</td>
-      <td>Arnab Chakraborty</td>
-      <td>60.5229</td>
-      <td>42.4643</td>
-      <td>21.4380</td>
-      <td>372.8639</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-22.8639</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>36786329</td>
-      <td>Arun Vishnu</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>380.9058</td>
-      <td>380.9058</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>69.0942</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>73033736</td>
-      <td>Arushi Dave</td>
-      <td>8.5588</td>
-      <td>0.0000</td>
-      <td>8.4585</td>
-      <td>34.1349</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>215.8651</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>85027859</td>
-      <td>Ashwin Reddy</td>
-      <td>14.8648</td>
-      <td>0.0000</td>
-      <td>993.0504</td>
-      <td>1037.6448</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-587.6448</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>120726798</td>
-      <td>Balaji Kannan</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>371.7865</td>
-      <td>371.7865</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-21.7865</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>18258275</td>
-      <td>Bhushan Palhade @ENEL</td>
-      <td>4.5943</td>
-      <td>5.6676</td>
-      <td>143.7838</td>
-      <td>180.2371</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>69.7629</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>89396510</td>
-      <td>Bnil Nath</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>534.2096</td>
-      <td>534.2096</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-84.2096</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>138596691</td>
-      <td>Chanakya Chowdari</td>
-      <td>0.0000</td>
-      <td>6.3294</td>
-      <td>1042.9657</td>
-      <td>1068.2833</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-618.2833</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>8009403</td>
-      <td>Chethan CJ</td>
-      <td>10.5828</td>
-      <td>15.0132</td>
-      <td>354.9445</td>
-      <td>446.7457</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-96.7457</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>26228884</td>
-      <td>Deerendra CR  Team BCC ®</td>
-      <td>29.3234</td>
-      <td>0.0000</td>
-      <td>394.1838</td>
-      <td>482.1540</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-32.1540</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>1609095</td>
-      <td>Dileesh Onniyil</td>
-      <td>76.7742</td>
-      <td>0.0000</td>
-      <td>253.2964</td>
-      <td>483.6190</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-33.6190</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>89491458</td>
-      <td>Dinesh Babu Jothilingam</td>
-      <td>9.2971</td>
-      <td>10.2817</td>
-      <td>362.0765</td>
-      <td>431.0946</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-81.0946</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>51167119</td>
-      <td>Dnyaneshwar Pawar</td>
-      <td>7.2772</td>
-      <td>45.6156</td>
-      <td>377.9496</td>
-      <td>582.2436</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-232.2436</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>221000</td>
-      <td>Doug Murphy</td>
-      <td>0.0000</td>
-      <td>19.2662</td>
-      <td>181.6969</td>
-      <td>258.7617</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>91.2383</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>33965368</td>
-      <td>DR TUKARAM GADEKAR</td>
-      <td>0.0000</td>
-      <td>47.4647</td>
-      <td>749.3027</td>
-      <td>939.1615</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-489.1615</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>102975470</td>
-      <td>Ganesh Gowtham Guptha</td>
-      <td>14.9993</td>
-      <td>0.0000</td>
-      <td>502.0560</td>
-      <td>547.0539</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-197.0539</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>44726894</td>
-      <td>Geeta Manian</td>
-      <td>9.0084</td>
-      <td>0.0000</td>
-      <td>217.9118</td>
-      <td>244.9370</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>105.0630</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>19779459</td>
-      <td>Giridhar 🚴🏻‍♀️ Team NWCG</td>
-      <td>2.8050</td>
-      <td>7.5300</td>
-      <td>781.5970</td>
-      <td>820.1320</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-370.1320</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>26131471</td>
-      <td>Gokul S</td>
-      <td>6.9382</td>
-      <td>5.0133</td>
-      <td>983.1820</td>
-      <td>1024.0498</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-574.0498</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>93788550</td>
-      <td>Heyram Kruthik 🇮🇳🇮🇳</td>
-      <td>5.8480</td>
-      <td>0.0000</td>
-      <td>356.0679</td>
-      <td>373.6119</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>76.3881</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>13513751</td>
-      <td>Jagdeep M</td>
-      <td>0.0000</td>
-      <td>5.1943</td>
-      <td>0.0000</td>
-      <td>20.7772</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>329.2228</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>102289276</td>
-      <td>Jeya Viknesh</td>
-      <td>1.1716</td>
-      <td>0.0000</td>
-      <td>818.4650</td>
-      <td>821.9798</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-471.9798</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>32470989</td>
-      <td>Kesavakrishnan (K7)</td>
-      <td>2.3516</td>
-      <td>0.0000</td>
-      <td>153.6460</td>
-      <td>160.7008</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>189.2992</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>20824154</td>
-      <td>Kiran Nath</td>
-      <td>10.2708</td>
-      <td>5.0734</td>
-      <td>245.7499</td>
-      <td>296.8559</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>-46.8559</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>66986677</td>
-      <td>Kiran Gopinadhan</td>
-      <td>24.1407</td>
-      <td>10.2695</td>
-      <td>324.4884</td>
-      <td>437.9885</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-87.9885</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>155198261</td>
-      <td>Lokesh Kumar TS</td>
-      <td>115.5475</td>
-      <td>43.6807</td>
-      <td>61.1188</td>
-      <td>582.4841</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-232.4841</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>83461364</td>
-      <td>M Peer Mohamed Sardhar</td>
-      <td>11.0693</td>
-      <td>0.0000</td>
-      <td>1102.3340</td>
-      <td>1135.5419</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-685.5419</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>56978638</td>
-      <td>Madhu Mandanna</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>329.9614</td>
-      <td>329.9614</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>120.0386</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>89882106</td>
-      <td>Mahaprabhu Chockalingam</td>
-      <td>2.6701</td>
-      <td>140.8653</td>
-      <td>139.4823</td>
-      <td>710.9538</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-260.9538</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>88231904</td>
-      <td>Mahendra Ch</td>
-      <td>0.0000</td>
-      <td>25.7384</td>
-      <td>517.4548</td>
-      <td>620.4084</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-170.4084</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>105131592</td>
-      <td>Maltesh Doddamani</td>
-      <td>7.2004</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>21.6012</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>328.3988</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>41553110</td>
-      <td>Manoj Manoharan</td>
-      <td>117.4397</td>
-      <td>0.0000</td>
-      <td>709.9164</td>
-      <td>1062.2355</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-612.2355</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>26425286</td>
-      <td>Meera Ramanarayanan</td>
-      <td>17.1199</td>
-      <td>0.0000</td>
-      <td>869.1751</td>
-      <td>920.5348</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-470.5348</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>134655629</td>
-      <td>Melvin George</td>
-      <td>3.2912</td>
-      <td>0.0000</td>
-      <td>196.4268</td>
-      <td>206.3004</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>143.6996</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>66351348</td>
-      <td>Meyyappan Lakshmanan</td>
-      <td>25.5573</td>
-      <td>145.4411</td>
-      <td>108.1793</td>
-      <td>766.6156</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>-516.6156</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>11461688</td>
-      <td>Mitesh Moonat</td>
-      <td>17.0901</td>
-      <td>7.5372</td>
-      <td>253.8344</td>
-      <td>335.2535</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>14.7465</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>146372140</td>
-      <td>Monty Yadappa</td>
-      <td>15.1942</td>
-      <td>8.9832</td>
-      <td>524.6780</td>
-      <td>606.1934</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-156.1934</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>66681541</td>
-      <td>Muthu Lakshmanan</td>
-      <td>4.6977</td>
-      <td>10.9121</td>
-      <td>70.6573</td>
-      <td>128.3988</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>121.6012</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>8101716</td>
-      <td>MuthuRaj SN</td>
-      <td>0.0000</td>
-      <td>4.0496</td>
-      <td>244.9315</td>
-      <td>261.1299</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>88.8701</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>107553436</td>
-      <td>Nageshwar Reddy</td>
-      <td>42.4961</td>
-      <td>0.0000</td>
-      <td>807.6528</td>
-      <td>935.1411</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-485.1411</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>106590102</td>
-      <td>Naveen Narayanan</td>
-      <td>4.5060</td>
-      <td>0.1800</td>
-      <td>71.5496</td>
-      <td>85.7876</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>164.2124</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>61476437</td>
-      <td>Pachappan M 🇮🇳🇮🇳🇮🇳</td>
-      <td>10.5779</td>
-      <td>0.0000</td>
-      <td>935.6025</td>
-      <td>967.3362</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-517.3362</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>30792002</td>
-      <td>Pavan Madhusudhan</td>
-      <td>1.3139</td>
-      <td>0.0000</td>
-      <td>74.5878</td>
-      <td>78.5295</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>371.4705</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>68902409</td>
-      <td>pawan gupta</td>
-      <td>33.0059</td>
-      <td>0.0000</td>
-      <td>19.3948</td>
-      <td>118.4125</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>231.5875</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>71790012</td>
-      <td>Pradip Take #Team IAS</td>
-      <td>124.3081</td>
-      <td>28.1212</td>
-      <td>154.1889</td>
-      <td>639.5980</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-289.5980</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>30968537</td>
-      <td>Prasad Pujari</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>307.1163</td>
-      <td>307.1163</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>142.8837</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>154836562</td>
-      <td>Prathiksha B</td>
-      <td>31.3215</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>93.9645</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>156.0355</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>96483346</td>
-      <td>Prem C</td>
-      <td>23.1407</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>69.4221</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>180.5779</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>139006932</td>
-      <td>Premanka Majumder</td>
-      <td>7.5553</td>
-      <td>0.0000</td>
-      <td>815.0617</td>
-      <td>837.7276</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-387.7276</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>114409901</td>
-      <td>Priyavardhini: Team NWCG</td>
-      <td>3.5652</td>
-      <td>6.1576</td>
-      <td>281.4368</td>
-      <td>316.7628</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>33.2372</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>51597806</td>
-      <td>Puneeth Kakarla</td>
-      <td>15.7432</td>
-      <td>78.5508</td>
-      <td>35.1375</td>
-      <td>396.5703</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>53.4297</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>21427761</td>
-      <td>Radha Madhava</td>
-      <td>113.2942</td>
-      <td>0.0000</td>
-      <td>138.8539</td>
-      <td>478.7365</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-128.7365</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>36029179</td>
-      <td>Rajan ATR</td>
-      <td>0.9058</td>
-      <td>0.0000</td>
-      <td>471.3957</td>
-      <td>474.1131</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-24.1131</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>42587336</td>
-      <td>Rajesh Karunakaran</td>
-      <td>24.2080</td>
-      <td>55.2912</td>
-      <td>20.7355</td>
-      <td>314.5243</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>-64.5243</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>41530812</td>
-      <td>Raju BN</td>
-      <td>0.0000</td>
-      <td>111.1084</td>
-      <td>379.7898</td>
-      <td>824.2234</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>-574.2234</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>61679552</td>
-      <td>Rakesh kumar</td>
-      <td>37.6140</td>
-      <td>53.3190</td>
-      <td>15.3489</td>
-      <td>341.4669</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>8.5331</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>108332975</td>
-      <td>Rambabu Dola</td>
-      <td>9.6649</td>
-      <td>0.0000</td>
-      <td>240.7351</td>
-      <td>269.7298</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>80.2702</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>102215387</td>
-      <td>Ramji .</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>196.3019</td>
-      <td>196.3019</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>53.6981</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>74101248</td>
-      <td>Ranga Raj 🇮🇳</td>
-      <td>30.2553</td>
-      <td>54.3133</td>
-      <td>51.5566</td>
-      <td>359.5757</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>90.4243</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>46405358</td>
-      <td>Roshan Ganapathy</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>839.1123</td>
-      <td>839.1123</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-389.1123</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>90043281</td>
-      <td>Rupesh P V</td>
-      <td>5.7096</td>
-      <td>0.0000</td>
-      <td>311.4383</td>
-      <td>328.5671</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>21.4329</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>76447642</td>
-      <td>Sachin Mudholkar 🇮🇳</td>
-      <td>1.3565</td>
-      <td>0.0000</td>
-      <td>621.7103</td>
-      <td>625.7798</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-275.7798</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>105832797</td>
-      <td>Sachin Shinde 🏊🚴🏃🇮🇳</td>
-      <td>16.6894</td>
-      <td>92.1120</td>
-      <td>413.1873</td>
-      <td>831.7035</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-381.7035</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>128126299</td>
-      <td>Satheesh Veerapandian</td>
-      <td>48.2828</td>
-      <td>0.0000</td>
-      <td>10.5523</td>
-      <td>155.4007</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>94.5993</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>66035989</td>
-      <td>Satish B</td>
-      <td>15.8195</td>
-      <td>0.0000</td>
-      <td>858.6922</td>
-      <td>906.1507</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-456.1507</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>43566033</td>
-      <td>Senthil Kumar J 🌺</td>
-      <td>29.0553</td>
-      <td>0.0000</td>
-      <td>901.1936</td>
-      <td>988.3595</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-638.3595</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>101635745</td>
-      <td>Shalini Verma</td>
-      <td>4.1225</td>
-      <td>15.3923</td>
-      <td>187.2581</td>
-      <td>261.1948</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>-11.1948</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>78216959</td>
-      <td>Shanmugam Avudaiyappan</td>
-      <td>29.4110</td>
-      <td>0.0000</td>
-      <td>89.7161</td>
-      <td>177.9491</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>172.0509</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>110711220</td>
-      <td>Shantnu 🚴NWCG 🏃RRS</td>
-      <td>75.0411</td>
-      <td>30.5298</td>
-      <td>0.0000</td>
-      <td>347.2425</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>-97.2425</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>37757732</td>
-      <td>Shashank Hunsur</td>
-      <td>52.7517</td>
-      <td>10.0042</td>
-      <td>367.1905</td>
-      <td>565.4624</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-115.4624</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>64083750</td>
-      <td>Shreyas SK</td>
-      <td>5.3520</td>
-      <td>0.0000</td>
-      <td>301.5680</td>
-      <td>317.6240</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>-67.6240</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>11732772</td>
-      <td>Shubhadeep Sarkar</td>
-      <td>47.3537</td>
-      <td>1.2452</td>
-      <td>47.9445</td>
-      <td>194.9864</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>155.0136</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>24768476</td>
-      <td>Siddhant Bahuguna</td>
-      <td>12.5145</td>
-      <td>1.3042</td>
-      <td>0.0000</td>
-      <td>42.7603</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>307.2397</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>155698926</td>
-      <td>Siva V</td>
-      <td>39.8089</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>119.4267</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>130.5733</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>155146681</td>
-      <td>Srinivas S</td>
-      <td>70.8705</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>212.6115</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>37.3885</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>39035808</td>
-      <td>Subhransu Sethi</td>
-      <td>22.2503</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>66.7509</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>183.2491</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>23837468</td>
-      <td>Suchita Malhotra</td>
-      <td>41.3138</td>
-      <td>33.0619</td>
-      <td>122.2953</td>
-      <td>378.4843</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-28.4843</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>43540882</td>
-      <td>sudhakar Ramakrishnan 🇮🇳</td>
-      <td>160.1033</td>
-      <td>14.1449</td>
-      <td>0.0000</td>
-      <td>536.8895</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-86.8895</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>101569751</td>
-      <td>Sudhakar Gopalan</td>
-      <td>69.7099</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>209.1297</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>40.8703</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>41531737</td>
-      <td>sudhakaran bhoopal</td>
-      <td>48.2072</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>144.6216</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>205.3784</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>100986868</td>
-      <td>Sudhan Naik</td>
-      <td>28.3788</td>
-      <td>0.0000</td>
-      <td>509.8208</td>
-      <td>594.9572</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-244.9572</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>75584500</td>
-      <td>Sudhir Reddy</td>
-      <td>6.3636</td>
-      <td>3.6761</td>
-      <td>134.6867</td>
-      <td>168.4819</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>81.5181</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>20340436</td>
-      <td>Swathi Priya</td>
-      <td>22.3397</td>
-      <td>0.0000</td>
-      <td>153.3159</td>
-      <td>220.3350</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>129.6650</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>35369511</td>
-      <td>Tandava Venkata</td>
-      <td>46.0221</td>
-      <td>0.0000</td>
-      <td>531.0223</td>
-      <td>669.0886</td>
-      <td>Reindeer (Intermediate)</td>
-      <td>350</td>
-      <td>-319.0886</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>76953471</td>
-      <td>Thiru B</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>858.1686</td>
-      <td>858.1686</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-408.1686</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>104852815</td>
-      <td>Uday Raju</td>
-      <td>2.0901</td>
-      <td>0.0000</td>
-      <td>35.0123</td>
-      <td>41.2826</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>408.7174</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>12636156</td>
-      <td>VenuGopal Maddula</td>
-      <td>18.0362</td>
-      <td>0.0000</td>
-      <td>784.8212</td>
-      <td>838.9298</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-388.9298</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>82434501</td>
-      <td>Vijay Kumar M</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>30.2584</td>
-      <td>30.2584</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>219.7416</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>45934411</td>
-      <td>Vijay Prasad</td>
-      <td>12.7697</td>
-      <td>2.2482</td>
-      <td>468.2822</td>
-      <td>515.5841</td>
-      <td>Leopard (Pro Level)</td>
-      <td>450</td>
-      <td>-65.5841</td>
-      <td>Yet to be Completed</td>
-    </tr>
-    <tr>
-      <td>13752604</td>
-      <td>Vinyas Rai</td>
-      <td>21.4695</td>
-      <td>0.0000</td>
-      <td>0.0000</td>
-      <td>64.4085</td>
-      <td>Polar Bear(Beginner)</td>
-      <td>250</td>
-      <td>185.5915</td>
-      <td>Completed</td>
-    </tr>
-  </tbody>
+<!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+<!--The following information was generated by Microsoft Excel's Publish as Web
+Page wizard.-->
+<!--If the same item is republished from Excel, all information between the DIV
+tags will be replaced.-->
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+
+<div id="nwcg_snowball_kms_2101_6146" align=center x:publishsource="Excel">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1116 style='border-collapse:
+ collapse;table-layout:fixed;width:836pt'>
+ <col width=72 style='mso-width-source:userset;mso-width-alt:2560;width:54pt'>
+ <col width=174 style='mso-width-source:userset;mso-width-alt:6172;width:130pt'>
+ <col class=xl676146 width=92 style='mso-width-source:userset;mso-width-alt:
+ 3271;width:69pt'>
+ <col class=xl676146 width=86 style='mso-width-source:userset;mso-width-alt:
+ 3043;width:64pt'>
+ <col class=xl676146 width=88 style='mso-width-source:userset;mso-width-alt:
+ 3128;width:66pt'>
+ <col class=xl676146 width=116 style='mso-width-source:userset;mso-width-alt:
+ 4124;width:87pt'>
+ <col width=148 style='mso-width-source:userset;mso-width-alt:5262;width:111pt'>
+ <col class=xl686146 width=84 style='mso-width-source:userset;mso-width-alt:
+ 2986;width:63pt'>
+ <col class=xl776146 width=127 style='mso-width-source:userset;mso-width-alt:
+ 4522;width:95pt'>
+ <col width=129 style='mso-width-source:userset;mso-width-alt:4579;width:97pt'>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl656146 width=72 style='height:14.4pt;width:54pt'>athlete_id</td>
+  <td class=xl656146 width=174 style='border-left:none;width:130pt'>Athelete</td>
+  <td class=xl666146 width=92 style='border-left:none;width:69pt'><span
+  style='mso-spacerun:yes'> </span>Walk<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl666146 width=86 style='border-left:none;width:64pt'><span
+  style='mso-spacerun:yes'> </span>Run<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl666146 width=88 style='border-left:none;width:66pt'><span
+  style='mso-spacerun:yes'> </span>Ride<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl666146 width=116 style='border-left:none;width:87pt'><span
+  style='mso-spacerun:yes'> </span>Total KMS<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl666146 width=148 style='border-left:none;width:111pt'><span
+  style='mso-spacerun:yes'> </span>Category<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl696146 width=84 style='border-left:none;width:63pt'><span
+  style='mso-spacerun:yes'> </span>Target<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl766146 width=127 style='border-left:none;width:95pt'><span
+  style='mso-spacerun:yes'> </span>Pending KMS<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl756146 width=129 style='border-left:none;width:97pt'><span
+  style='mso-spacerun:yes'> </span>Status<span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>146423857</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Abhishek Surbhat</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>4.99 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>35.09 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>155.33 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-94.67 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>79089690</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>AJ | OTS |</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>40.63 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>248.76 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>411.28 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>61.28 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>51887166</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Anil Karnani</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>18.63 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>133.66 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>189.56 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-60.44 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>141188010</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Anshuman Mishra</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>58.50 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>17.21 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>186.22 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>430.58 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>80.58 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>76316471</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Archana Rudra</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>32.12 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>504.74 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>601.11 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>251.11 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>113654674</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>archana Muniraj</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>143.18 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>143.18 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-106.82 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>12789525</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Arnab Chakraborty</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>60.52 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>42.46 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>21.44 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>372.86 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>22.86 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>36786329</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Arun Vishnu</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>380.91 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>380.91 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-69.09 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>73033736</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Arushi Dave</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>8.56 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>8.46 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>34.13 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-215.87 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>85027859</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Ashwin Reddy</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>14.86 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>993.05 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                 </span>1,037.64 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>587.64 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>120726798</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Balaji Kannan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>371.79 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>371.79 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>21.79 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>18258275</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Bhushan Palhade
+  @ENEL</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>4.59 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>5.67 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>143.78 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>180.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-69.76 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>89396510</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Bnil Nath</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>534.21 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>534.21 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>84.21 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>138596691</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Chanakya Chowdari</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>6.33 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>         </span>1,042.97 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                 </span>1,068.28 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>618.28 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>8009403</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Chethan CJ</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>10.58 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>15.01 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>354.94 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>446.75 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>96.75 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>26228884</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Deerendra CR<span
+  style='mso-spacerun:yes'>  </span>Team BCC ®<span
+  style='mso-spacerun:yes'>  </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>29.32 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>394.18 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>482.15 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>32.15 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>1609095</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Dileesh Onniyil</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>76.77 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>253.30 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>483.62 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>33.62 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>89491458</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Dinesh Babu
+  Jothilingam</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>9.30 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>10.28 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>362.08 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>431.09 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>81.09 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>51167119</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Dnyaneshwar Pawar</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>7.28 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>45.62 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>377.95 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>582.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>232.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>221000</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Doug Murphy</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>19.27 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>181.70 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>258.76 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-91.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>33965368</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>DR TUKARAM
+  GADEKAR</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>47.46 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>749.30 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>939.16 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>489.16 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>102975470</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Ganesh Gowtham
+  Guptha</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>15.00 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>502.06 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>547.05 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>197.05 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>44726894</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Geeta Manian</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>9.01 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>217.91 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>244.94 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-105.06 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>19779459</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Giridhar
+  &#128692;&#127995;&#8205;&#9792;&#65039; Team NWCG</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>2.81 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>7.53 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>781.60 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>820.13 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>370.13 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>26131471</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Gokul S</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>6.94 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>5.01 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>983.18 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                 </span>1,024.05 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>574.05 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>93788550</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Heyram Kruthik
+  &#127470;&#127475;&#127470;&#127475;</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>5.85 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>356.07 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>373.61 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-76.39 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>13513751</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Jagdeep M</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>5.19 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>20.78 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-329.22 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>102289276</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Jeya Viknesh</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>1.17 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>818.47 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>821.98 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>471.98 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>32470989</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Kesavakrishnan
+  (K7)</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>2.35 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>153.65 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>160.70 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-189.30 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>20824154</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Kiran Nath</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>10.27 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>5.07 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>245.75 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>296.86 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>46.86 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>66986677</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Kiran Gopinadhan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>24.14 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>10.27 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>324.49 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>437.99 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>87.99 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>155198261</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Lokesh Kumar TS</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>115.55 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>43.68 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>61.12 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>582.48 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>232.48 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>83461364</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>M Peer Mohamed
+  Sardhar</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>11.07 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>         </span>1,102.33 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                 </span>1,135.54 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>685.54 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>56978638</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Madhu Mandanna</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>329.96 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>329.96 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-120.04 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>89882106</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Mahaprabhu
+  Chockalingam</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>2.67 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>           </span>140.87 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>139.48 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>710.95 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>260.95 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>88231904</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Mahendra Ch</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>25.74 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>517.45 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>620.41 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>170.41 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>105131592</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Maltesh Doddamani</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>7.20 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>21.60 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-328.40 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>41553110</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Manoj Manoharan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>117.44 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>709.92 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                 </span>1,062.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>612.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>26425286</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Meera
+  Ramanarayanan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>17.12 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>869.18 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>920.53 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>470.53 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>134655629</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Melvin George</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>3.29 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>196.43 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>206.30 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-143.70 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>66351348</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Meyyappan
+  Lakshmanan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>25.56 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>           </span>145.44 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>108.18 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>766.62 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>516.62 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>11461688</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Mitesh Moonat</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>17.09 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>7.54 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>253.83 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>335.25 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-14.75 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>146372140</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Monty Yadappa</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>15.19 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>8.98 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>524.68 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>606.19 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>156.19 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>66681541</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Muthu Lakshmanan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>4.70 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>10.91 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>70.66 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>128.40 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-121.60 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>8101716</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>MuthuRaj SN</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>4.05 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>244.93 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>261.13 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-88.87 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>107553436</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Nageshwar Reddy</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>42.50 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>807.65 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>935.14 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>485.14 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>106590102</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Naveen Narayanan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>4.51 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>0.18 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>71.55 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>85.79 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-164.21 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>61476437</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Pachappan M
+  &#127470;&#127475;&#127470;&#127475;&#127470;&#127475;</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>10.58 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>935.60 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>967.34 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>517.34 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>30792002</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Pavan Madhusudhan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>1.31 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>74.59 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>78.53 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-371.47 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>68902409</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>pawan gupta</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>33.01 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>19.39 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>118.41 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-231.59 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>71790012</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Pradip Take #Team
+  IAS</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>124.31 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>28.12 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>154.19 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>639.60 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>289.60 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>30968537</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Prasad Pujari</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>307.12 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>307.12 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-142.88 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>154836562</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Prathiksha B</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>31.32 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>93.96 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-156.04 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>96483346</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Prem C</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>23.14 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>69.42 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-180.58 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>139006932</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Premanka Majumder</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>7.56 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>815.06 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>837.73 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>387.73 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>114409901</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Priyavardhini:
+  Team NWCG</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>3.57 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>6.16 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>281.44 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>316.76 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-33.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>51597806</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Puneeth Kakarla</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>15.74 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>78.55 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>35.14 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>396.57 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-53.43 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>21427761</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Radha Madhava</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>113.29 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>138.85 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>478.74 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>128.74 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>36029179</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Rajan ATR</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>0.91 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>471.40 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>474.11 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>24.11 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>42587336</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Rajesh
+  Karunakaran</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>24.21 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>55.29 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>20.74 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>314.52 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>64.52 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>41530812</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Raju BN</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>           </span>111.11 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>379.79 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>824.22 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>574.22 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>61679552</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Rakesh kumar</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>37.61 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>53.32 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>15.35 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>341.47 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                           </span>-8.53 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>108332975</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Rambabu Dola</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>9.66 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>240.74 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>269.73 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-80.27 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>102215387</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Ramji .</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>196.30 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>196.30 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-53.70 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>74101248</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Ranga Raj
+  &#127470;&#127475;</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>30.26 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>54.31 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>51.56 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>359.58 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-90.42 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>46405358</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Roshan Ganapathy</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>839.11 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>839.11 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>389.11 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>90043281</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Rupesh P V</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>5.71 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>311.44 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>328.57 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-21.43 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>76447642</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Sachin Mudholkar
+  &#127470;&#127475;</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>1.36 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>621.71 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>625.78 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>275.78 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>105832797</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Sachin Shinde
+  &#127946;&#128692;&#127939;&#127470;&#127475;</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>16.69 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>92.11 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>413.19 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>831.70 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>381.70 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>128126299</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Satheesh
+  Veerapandian</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>48.28 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>10.55 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>155.40 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-94.60 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>66035989</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Satish B</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>15.82 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>858.69 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>906.15 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>456.15 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>43566033</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Senthil Kumar J
+  &#127802;</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>29.06 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>901.19 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>988.36 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>638.36 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>101635745</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Shalini Verma</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>4.12 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>15.39 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>187.26 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>261.19 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>11.19 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>78216959</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Shanmugam
+  Avudaiyappan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>29.41 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>89.72 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>177.95 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-172.05 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>110711220</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Shantnu
+  &#128692;NWCG &#127939;RRS</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>75.04 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>30.53 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>347.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>97.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>37757732</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Shashank Hunsur</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>52.75 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>10.00 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>367.19 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>565.46 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>115.46 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>64083750</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Shreyas SK</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>5.35 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>301.57 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>317.62 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>67.62 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>11732772</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Shubhadeep Sarkar</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>47.35 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>1.25 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>47.94 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>194.99 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-155.01 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>24768476</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Siddhant Bahuguna</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>12.51 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>1.30 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>42.76 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-307.24 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>155698926</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Siva V</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>39.81 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>119.43 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-130.57 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>155146681</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Srinivas S</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>70.87 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>212.61 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-37.39 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>39035808</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Subhransu Sethi</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>22.25 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>66.75 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-183.25 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>23837468</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Suchita Malhotra</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>41.31 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>33.06 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>122.30 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>378.48 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>28.48 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>43540882</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>sudhakar
+  Ramakrishnan &#127470;&#127475;</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>160.10 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>             </span>14.14 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>536.89 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>86.89 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>101569751</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Sudhakar Gopalan</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>69.71 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>209.13 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-40.87 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>41531737</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>sudhakaran
+  bhoopal</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>48.21 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>144.62 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-205.38 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>100986868</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Sudhan Naik</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>28.38 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>509.82 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>594.96 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>244.96 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>75584500</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Sudhir Reddy</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>6.36 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>3.68 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>134.69 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>168.48 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                         </span>-81.52 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>20340436</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Swathi Priya</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>22.34 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>153.32 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>220.34 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-129.67 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>35369511</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Tandava Venkata</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>46.02 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>531.02 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>669.09 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Reindeer
+  (Intermediate)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>350 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>319.09 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>76953471</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Thiru B</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>858.17 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>858.17 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>408.17 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>104852815</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Uday Raju</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                  </span>2.09 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>35.01 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>41.28 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-408.72 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>12636156</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>VenuGopal Maddula</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>18.04 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>784.82 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>838.93 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                        </span>388.93 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>82434501</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Vijay Kumar M</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                      </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>              </span>30.26 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>30.26 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-219.74 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>45934411</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Vijay Prasad</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>12.77 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>2.25 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>            </span>468.28 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>515.58 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Leopard (Pro
+  Level)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>450 </td>
+  <td class=xl736146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                          </span>65.58 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Completed</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl706146 align=right style='height:14.4pt;border-top:
+  none'>13752604</td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Vinyas Rai</td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>               </span>21.47 </td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                    </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                     </span>-<span
+  style='mso-spacerun:yes'>   </span></td>
+  <td class=xl716146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>64.41 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Polar
+  Bear(Beginner)</td>
+  <td class=xl726146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                </span>250 </td>
+  <td class=xl746146 style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>                       </span>-185.59 </td>
+  <td class=xl706146 style='border-top:none;border-left:none'>Yet to be
+  completed</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=72 style='width:54pt'></td>
+  <td width=174 style='width:130pt'></td>
+  <td width=92 style='width:69pt'></td>
+  <td width=86 style='width:64pt'></td>
+  <td width=88 style='width:66pt'></td>
+  <td width=116 style='width:87pt'></td>
+  <td width=148 style='width:111pt'></td>
+  <td width=84 style='width:63pt'></td>
+  <td width=127 style='width:95pt'></td>
+  <td width=129 style='width:97pt'></td>
+ </tr>
+ <![endif]>
 </table>
+
+</div>
+
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
 </body>
+
 </html>
