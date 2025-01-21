@@ -1,975 +1,1212 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NWCG Snowball Challenge 2025</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-        }
+<meta charset='UTF-8'>
+<title>Excel Data</title>
 
-        header {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px auto;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+    .table {
+        width: 95%;
+        margin: auto;
+    }
+</style>
 
-        main {
-            margin: 20px;
-            text-align: center;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            margin: 20px 0;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-
-        table {
-            width: 90%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        th, td {
-            padding: 12px;
-            border: 1px solid #dee2e6;
-            text-align: left;
-        }
-
-        th {
-            background-color: #6c757d;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-    </style>
 </head>
 <body>
-    <header>NWCG Snowball Challenge 2025</header>
-    <main>
-        <p>Welcome to the NWCG Snowball Challenge! Stay tuned for updates and interactive data displays.</p>
-        <a href="#" class="button">Learn More</a>
-				<table cellspacing=0 border=1>
-					<tr>
-						<td style=min-width:50px>athlete_id</td>
-						<td style=min-width:50px>Name</td>
-						<td style=min-width:50px>Walk</td>
-						<td style=min-width:50px>Run</td>
-						<td style=min-width:50px>Ride</td>
-						<td style=min-width:50px>Total KMS</td>
-						<td style=min-width:50px>Levels</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>146423857</td>
-						<td style=min-width:50px>Abhishek Surbhat</td>
-						<td style=min-width:50px>4.99</td>
-						<td style=min-width:50px>33.65</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>149.57</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>79089690</td>
-						<td style=min-width:50px>AJ | OTS |</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>33.88</td>
-						<td style=min-width:50px>212.68</td>
-						<td style=min-width:50px>348.21</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>51887166</td>
-						<td style=min-width:50px>Anil Karnani</td>
-						<td style=min-width:50px>11.21</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>61.82</td>
-						<td style=min-width:50px>95.46</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>141188010</td>
-						<td style=min-width:50px>Anshuman Mishra</td>
-						<td style=min-width:50px>43.71</td>
-						<td style=min-width:50px>12.90</td>
-						<td style=min-width:50px>126.40</td>
-						<td style=min-width:50px>309.13</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>113654674</td>
-						<td style=min-width:50px>archana Muniraj</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>4.61</td>
-						<td style=min-width:50px>4.61</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>76316471</td>
-						<td style=min-width:50px>Archana Rudra</td>
-						<td style=min-width:50px>20.96</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>370.56</td>
-						<td style=min-width:50px>433.45</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>12789525</td>
-						<td style=min-width:50px>Arnab Chakraborty</td>
-						<td style=min-width:50px>33.24</td>
-						<td style=min-width:50px>25.21</td>
-						<td style=min-width:50px>21.44</td>
-						<td style=min-width:50px>221.99</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>36786329</td>
-						<td style=min-width:50px>Arun Vishnu</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>214.70</td>
-						<td style=min-width:50px>214.70</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>73033736</td>
-						<td style=min-width:50px>Arushi Dave</td>
-						<td style=min-width:50px>8.56</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>25.68</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>85027859</td>
-						<td style=min-width:50px>Ashwin Reddy</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>729.47</td>
-						<td style=min-width:50px>729.47</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>23425</td>
-						<td style=min-width:50px>Asmita Kamboj</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>120726798</td>
-						<td style=min-width:50px>Balaji Kannan</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>337.55</td>
-						<td style=min-width:50px>337.55</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>18258275</td>
-						<td style=min-width:50px>Bhushan Palhade @ENEL</td>
-						<td style=min-width:50px>0.95</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>39.53</td>
-						<td style=min-width:50px>42.38</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>89396510</td>
-						<td style=min-width:50px>Bnil Nath</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>418.65</td>
-						<td style=min-width:50px>418.65</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>138596691</td>
-						<td style=min-width:50px>Chanakya Chowdari 🇮🇳 : Team BCC®</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>6.33</td>
-						<td style=min-width:50px>783.86</td>
-						<td style=min-width:50px>809.18</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>8009403</td>
-						<td style=min-width:50px>Chethan CJ</td>
-						<td style=min-width:50px>7.57</td>
-						<td style=min-width:50px>15.01</td>
-						<td style=min-width:50px>306.96</td>
-						<td style=min-width:50px>389.73</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>26228884</td>
-						<td style=min-width:50px>Deerendra CR  Team BCC ®  </td>
-						<td style=min-width:50px>21.30</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>167.73</td>
-						<td style=min-width:50px>231.62</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>1609095</td>
-						<td style=min-width:50px>Dileesh Onniyil</td>
-						<td style=min-width:50px>45.09</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>222.55</td>
-						<td style=min-width:50px>357.82</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>89491458</td>
-						<td style=min-width:50px>Dinesh Babu Jothilingam</td>
-						<td style=min-width:50px>0.82</td>
-						<td style=min-width:50px>5.20</td>
-						<td style=min-width:50px>284.22</td>
-						<td style=min-width:50px>307.46</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>51167119</td>
-						<td style=min-width:50px>Dnyaneshwar Pawar</td>
-						<td style=min-width:50px>4.18</td>
-						<td style=min-width:50px>28.56</td>
-						<td style=min-width:50px>246.74</td>
-						<td style=min-width:50px>373.54</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>221000</td>
-						<td style=min-width:50px>Doug Murphy</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>19.27</td>
-						<td style=min-width:50px>148.95</td>
-						<td style=min-width:50px>226.02</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>33965368</td>
-						<td style=min-width:50px>DR TUKARAM GADEKAR</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>12.65</td>
-						<td style=min-width:50px>615.35</td>
-						<td style=min-width:50px>665.95</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>102975470</td>
-						<td style=min-width:50px>Ganesh Gowtham Guptha</td>
-						<td style=min-width:50px>8.44</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>218.63</td>
-						<td style=min-width:50px>243.95</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>44726894</td>
-						<td style=min-width:50px>Geeta Manian</td>
-						<td style=min-width:50px>3.04</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>205.38</td>
-						<td style=min-width:50px>214.51</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>19779459</td>
-						<td style=min-width:50px>Giridhar 🚴🏻‍♀️ Team NWCG</td>
-						<td style=min-width:50px>2.07</td>
-						<td style=min-width:50px>2.40</td>
-						<td style=min-width:50px>515.44</td>
-						<td style=min-width:50px>531.25</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>26131471</td>
-						<td style=min-width:50px>Gokul S</td>
-						<td style=min-width:50px>4.43</td>
-						<td style=min-width:50px>5.01</td>
-						<td style=min-width:50px>683.76</td>
-						<td style=min-width:50px>717.11</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>93788550</td>
-						<td style=min-width:50px>Heyram Kruthik 🇮🇳🇮🇳</td>
-						<td style=min-width:50px>5.85</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>244.45</td>
-						<td style=min-width:50px>262.00</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>13513751</td>
-						<td style=min-width:50px>Jagdeep M</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>5.19</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>20.78</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>102289276</td>
-						<td style=min-width:50px>Jeya Viknesh</td>
-						<td style=min-width:50px>1.17</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>356.79</td>
-						<td style=min-width:50px>360.30</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>24252</td>
-						<td style=min-width:50px>Jyoti Rawat</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>32470989</td>
-						<td style=min-width:50px>Kesavakrishnan (K7)</td>
-						<td style=min-width:50px>2.35</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>7.05</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>66986677</td>
-						<td style=min-width:50px>Kiran Gopinadhan</td>
-						<td style=min-width:50px>20.54</td>
-						<td style=min-width:50px>5.07</td>
-						<td style=min-width:50px>200.72</td>
-						<td style=min-width:50px>282.60</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>20824154</td>
-						<td style=min-width:50px>Kiran Nath H 🚴🏼 Chavittuvandi</td>
-						<td style=min-width:50px>10.27</td>
-						<td style=min-width:50px>5.07</td>
-						<td style=min-width:50px>201.29</td>
-						<td style=min-width:50px>252.40</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>155198261</td>
-						<td style=min-width:50px>Lokesh Kumar TS</td>
-						<td style=min-width:50px>79.68</td>
-						<td style=min-width:50px>43.68</td>
-						<td style=min-width:50px>10.84</td>
-						<td style=min-width:50px>424.61</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>83461364</td>
-						<td style=min-width:50px>M Peer Mohamed Sardhar</td>
-						<td style=min-width:50px>11.07</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>419.93</td>
-						<td style=min-width:50px>453.14</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>56978638</td>
-						<td style=min-width:50px>Madhu Mandanna</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>329.96</td>
-						<td style=min-width:50px>329.96</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>89882106</td>
-						<td style=min-width:50px>Mahaprabhu Chockalingam</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>119.22</td>
-						<td style=min-width:50px>139.48</td>
-						<td style=min-width:50px>616.36</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>88231904</td>
-						<td style=min-width:50px>Mahendra Ch</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>25.74</td>
-						<td style=min-width:50px>394.02</td>
-						<td style=min-width:50px>496.97</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>105131592</td>
-						<td style=min-width:50px>Maltesh Doddamani</td>
-						<td style=min-width:50px>7.20</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>21.60</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>41553110</td>
-						<td style=min-width:50px>Manoj Manoharan</td>
-						<td style=min-width:50px>69.67</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>481.62</td>
-						<td style=min-width:50px>690.62</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>26425286</td>
-						<td style=min-width:50px>Meera Ramanarayanan</td>
-						<td style=min-width:50px>9.69</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>569.14</td>
-						<td style=min-width:50px>598.21</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>134655629</td>
-						<td style=min-width:50px>Melvin George</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>196.43</td>
-						<td style=min-width:50px>196.43</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>66351348</td>
-						<td style=min-width:50px>Meyyappan Lakshmanan</td>
-						<td style=min-width:50px>17.42</td>
-						<td style=min-width:50px>108.33</td>
-						<td style=min-width:50px>81.66</td>
-						<td style=min-width:50px>567.24</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>11461688</td>
-						<td style=min-width:50px>Mitesh Moonat</td>
-						<td style=min-width:50px>8.56</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>208.80</td>
-						<td style=min-width:50px>234.49</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>146372140</td>
-						<td style=min-width:50px>Monty Yadappa:🇮🇳 Team NWCG</td>
-						<td style=min-width:50px>12.23</td>
-						<td style=min-width:50px>7.69</td>
-						<td style=min-width:50px>476.63</td>
-						<td style=min-width:50px>544.08</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>66681541</td>
-						<td style=min-width:50px>Muthu Lakshmanan</td>
-						<td style=min-width:50px>3.45</td>
-						<td style=min-width:50px>5.46</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>32.21</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>8101716</td>
-						<td style=min-width:50px>MuthuRaj SN</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>4.05</td>
-						<td style=min-width:50px>208.41</td>
-						<td style=min-width:50px>224.61</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>107553436</td>
-						<td style=min-width:50px>Nageshwar Reddy</td>
-						<td style=min-width:50px>29.34</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>644.61</td>
-						<td style=min-width:50px>732.64</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>106590102</td>
-						<td style=min-width:50px>Naveen Narayanan</td>
-						<td style=min-width:50px>4.51</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>71.55</td>
-						<td style=min-width:50px>85.07</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>61476437</td>
-						<td style=min-width:50px>Pachappan M 🇮🇳🇮🇳🇮🇳</td>
-						<td style=min-width:50px>5.55</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>753.16</td>
-						<td style=min-width:50px>769.82</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>30792002</td>
-						<td style=min-width:50px>Pavan Madhusudhan</td>
-						<td style=min-width:50px>1.31</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>3.94</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>68902409</td>
-						<td style=min-width:50px>pawan gupta</td>
-						<td style=min-width:50px>28.69</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>19.39</td>
-						<td style=min-width:50px>105.46</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>12345</td>
-						<td style=min-width:50px>Prabhu Muniappa</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px></td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>71790012</td>
-						<td style=min-width:50px>Pradip Take #Team IAS</td>
-						<td style=min-width:50px>93.81</td>
-						<td style=min-width:50px>28.12</td>
-						<td style=min-width:50px>117.05</td>
-						<td style=min-width:50px>510.98</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>30968537</td>
-						<td style=min-width:50px>Prasad Pujari</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>206.54</td>
-						<td style=min-width:50px>206.54</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>154836562</td>
-						<td style=min-width:50px>Prathiksha B</td>
-						<td style=min-width:50px>15.52</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>46.56</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>96483346</td>
-						<td style=min-width:50px>Prem C</td>
-						<td style=min-width:50px>23.14</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>69.42</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>139006932</td>
-						<td style=min-width:50px>Premanka Majumder</td>
-						<td style=min-width:50px>5.38</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>610.41</td>
-						<td style=min-width:50px>626.56</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>114409901</td>
-						<td style=min-width:50px>Priyavardhini: Team NWCG</td>
-						<td style=min-width:50px>3.57</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>239.50</td>
-						<td style=min-width:50px>250.19</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>51597806</td>
-						<td style=min-width:50px>Puneeth Kakarla</td>
-						<td style=min-width:50px>5.31</td>
-						<td style=min-width:50px>29.94</td>
-						<td style=min-width:50px>22.72</td>
-						<td style=min-width:50px>158.42</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>21427761</td>
-						<td style=min-width:50px>Radha Madhava</td>
-						<td style=min-width:50px>74.30</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>44.51</td>
-						<td style=min-width:50px>267.40</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>36029179</td>
-						<td style=min-width:50px>Rajan ATR</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>375.19</td>
-						<td style=min-width:50px>375.19</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>42587336</td>
-						<td style=min-width:50px>Rajesh Karunakaran</td>
-						<td style=min-width:50px>13.10</td>
-						<td style=min-width:50px>35.28</td>
-						<td style=min-width:50px>8.53</td>
-						<td style=min-width:50px>188.93</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>41530812</td>
-						<td style=min-width:50px>Raju BN</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>68.25</td>
-						<td style=min-width:50px>265.47</td>
-						<td style=min-width:50px>538.47</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>61679552</td>
-						<td style=min-width:50px>Rakesh kumar</td>
-						<td style=min-width:50px>31.20</td>
-						<td style=min-width:50px>53.32</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>306.89</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>108332975</td>
-						<td style=min-width:50px>Rambabu Dola</td>
-						<td style=min-width:50px>9.66</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>240.74</td>
-						<td style=min-width:50px>269.73</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>102215387</td>
-						<td style=min-width:50px>Ramji .</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>141.99</td>
-						<td style=min-width:50px>141.99</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>74101248</td>
-						<td style=min-width:50px>Ranga Raj 🇮🇳</td>
-						<td style=min-width:50px>24.66</td>
-						<td style=min-width:50px>29.04</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>190.13</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>46405358</td>
-						<td style=min-width:50px>Roshan Ganapathy | GHOST RIDER 👻</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>646.82</td>
-						<td style=min-width:50px>646.82</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>90043281</td>
-						<td style=min-width:50px>Rupesh P V</td>
-						<td style=min-width:50px>5.71</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>146.17</td>
-						<td style=min-width:50px>163.30</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>76447642</td>
-						<td style=min-width:50px>Sachin Mudholkar 🇮🇳</td>
-						<td style=min-width:50px>1.36</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>495.56</td>
-						<td style=min-width:50px>499.63</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>105832797</td>
-						<td style=min-width:50px>Sachin Shinde 🏊🚴🏃🇮🇳</td>
-						<td style=min-width:50px>16.69</td>
-						<td style=min-width:50px>30.38</td>
-						<td style=min-width:50px>413.19</td>
-						<td style=min-width:50px>584.78</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>128126299</td>
-						<td style=min-width:50px>Satheesh Veerapandian</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>10.55</td>
-						<td style=min-width:50px>10.55</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>66035989</td>
-						<td style=min-width:50px>Satish B</td>
-						<td style=min-width:50px>12.50</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>709.06</td>
-						<td style=min-width:50px>746.56</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>43566033</td>
-						<td style=min-width:50px>Senthil Kumar J 🌺</td>
-						<td style=min-width:50px>13.97</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>728.47</td>
-						<td style=min-width:50px>770.38</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>101635745</td>
-						<td style=min-width:50px>Shalini Verma</td>
-						<td style=min-width:50px>4.12</td>
-						<td style=min-width:50px>6.66</td>
-						<td style=min-width:50px>98.04</td>
-						<td style=min-width:50px>137.05</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>78216959</td>
-						<td style=min-width:50px>Shanmugam Avudaiyappan</td>
-						<td style=min-width:50px>19.01</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>57.04</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>110711220</td>
-						<td style=min-width:50px>Shantnu 🚴NWCG 🏃RRS</td>
-						<td style=min-width:50px>37.93</td>
-						<td style=min-width:50px>5.01</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>133.83</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>37757732</td>
-						<td style=min-width:50px>Shashank Hunsur | Maverick 🌟</td>
-						<td style=min-width:50px>35.67</td>
-						<td style=min-width:50px>5.00</td>
-						<td style=min-width:50px>367.19</td>
-						<td style=min-width:50px>494.21</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>64083750</td>
-						<td style=min-width:50px>Shreyas SK</td>
-						<td style=min-width:50px>5.35</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>201.30</td>
-						<td style=min-width:50px>217.36</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>11732772</td>
-						<td style=min-width:50px>Shubhadeep Sarkar</td>
-						<td style=min-width:50px>30.97</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>92.92</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>24768476</td>
-						<td style=min-width:50px>Siddhant Bahuguna</td>
-						<td style=min-width:50px>6.22</td>
-						<td style=min-width:50px>1.30</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>23.88</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>155698926</td>
-						<td style=min-width:50px>Siva V</td>
-						<td style=min-width:50px>17.64</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>52.93</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>155146681</td>
-						<td style=min-width:50px>Srinivas S</td>
-						<td style=min-width:50px>46.57</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>139.70</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>39035808</td>
-						<td style=min-width:50px>Subhransu Sethi</td>
-						<td style=min-width:50px>17.53</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>52.60</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>23837468</td>
-						<td style=min-width:50px>Suchita Malhotra</td>
-						<td style=min-width:50px>17.78</td>
-						<td style=min-width:50px>27.05</td>
-						<td style=min-width:50px>85.84</td>
-						<td style=min-width:50px>247.40</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>101569751</td>
-						<td style=min-width:50px>Sudhakar Gopalan</td>
-						<td style=min-width:50px>42.20</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>126.61</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>43540882</td>
-						<td style=min-width:50px>sudhakar Ramakrishnan 🇮🇳</td>
-						<td style=min-width:50px>160.10</td>
-						<td style=min-width:50px>14.14</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>536.89</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>41531737</td>
-						<td style=min-width:50px>sudhakaran bhoopal</td>
-						<td style=min-width:50px>14.14</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>42.43</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>100986868</td>
-						<td style=min-width:50px>Sudhan Naik</td>
-						<td style=min-width:50px>7.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>332.11</td>
-						<td style=min-width:50px>353.12</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>75584500</td>
-						<td style=min-width:50px>Sudhir Reddy</td>
-						<td style=min-width:50px>8.50</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>9.12</td>
-						<td style=min-width:50px>34.63</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>20340436</td>
-						<td style=min-width:50px>Swathi Priya</td>
-						<td style=min-width:50px>19.65</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>102.03</td>
-						<td style=min-width:50px>161.00</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>35369511</td>
-						<td style=min-width:50px>Tandava Venkata Krishna Popuri</td>
-						<td style=min-width:50px>36.92</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>462.62</td>
-						<td style=min-width:50px>573.40</td>
-						<td style=min-width:50px>Reindeer (Intermediate)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>76953471</td>
-						<td style=min-width:50px>Thiru B</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>563.91</td>
-						<td style=min-width:50px>563.91</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>104852815</td>
-						<td style=min-width:50px>Uday Raju</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>35.01</td>
-						<td style=min-width:50px>35.01</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>12636156</td>
-						<td style=min-width:50px>VenuGopal Maddula</td>
-						<td style=min-width:50px>3.05</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>711.76</td>
-						<td style=min-width:50px>720.90</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>82434501</td>
-						<td style=min-width:50px>Vijay Kumar M</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>30.26</td>
-						<td style=min-width:50px>30.26</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>45934411</td>
-						<td style=min-width:50px>Vijay Prasad SR| HH | HCR |Team BCC®</td>
-						<td style=min-width:50px>11.57</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>292.61</td>
-						<td style=min-width:50px>327.32</td>
-						<td style=min-width:50px>Leopard (Pro Level)</td>
-					</tr>
-					<tr>
-						<td style=min-width:50px>13752604</td>
-						<td style=min-width:50px>Vinyas Rai</td>
-						<td style=min-width:50px>21.47</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>0.00</td>
-						<td style=min-width:50px>64.41</td>
-						<td style=min-width:50px>Polar Bear(Beginner)</td>
-					</tr>
-				</table>
-				<hr>
-				</body>
-			</html>
+<table class="dataframe table table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>athlete_id</th>
+      <th>Athelete</th>
+      <th>Walk</th>
+      <th>Run</th>
+      <th>Ride</th>
+      <th>Total KMS</th>
+      <th>Category</th>
+      <th>Target</th>
+      <th>Pending KMS</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>146423857</td>
+      <td>Abhishek Surbhat</td>
+      <td>4.9864</td>
+      <td>35.0922</td>
+      <td>0.0000</td>
+      <td>155.3280</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>94.6720</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>79089690</td>
+      <td>AJ | OTS |</td>
+      <td>0.0000</td>
+      <td>40.6289</td>
+      <td>248.7611</td>
+      <td>411.2767</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-61.2767</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>51887166</td>
+      <td>Anil Karnani</td>
+      <td>18.6306</td>
+      <td>0.0000</td>
+      <td>133.6642</td>
+      <td>189.5560</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>60.4440</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>141188010</td>
+      <td>Anshuman Mishra</td>
+      <td>58.5021</td>
+      <td>17.2133</td>
+      <td>186.2178</td>
+      <td>430.5773</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-80.5773</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>76316471</td>
+      <td>Archana Rudra</td>
+      <td>32.1205</td>
+      <td>0.0000</td>
+      <td>504.7437</td>
+      <td>601.1052</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-251.1052</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>113654674</td>
+      <td>archana Muniraj</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>143.1836</td>
+      <td>143.1836</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>106.8164</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>12789525</td>
+      <td>Arnab Chakraborty</td>
+      <td>60.5229</td>
+      <td>42.4643</td>
+      <td>21.4380</td>
+      <td>372.8639</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-22.8639</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>36786329</td>
+      <td>Arun Vishnu</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>380.9058</td>
+      <td>380.9058</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>69.0942</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>73033736</td>
+      <td>Arushi Dave</td>
+      <td>8.5588</td>
+      <td>0.0000</td>
+      <td>8.4585</td>
+      <td>34.1349</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>215.8651</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>85027859</td>
+      <td>Ashwin Reddy</td>
+      <td>14.8648</td>
+      <td>0.0000</td>
+      <td>993.0504</td>
+      <td>1037.6448</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-587.6448</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>120726798</td>
+      <td>Balaji Kannan</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>371.7865</td>
+      <td>371.7865</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-21.7865</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>18258275</td>
+      <td>Bhushan Palhade @ENEL</td>
+      <td>4.5943</td>
+      <td>5.6676</td>
+      <td>143.7838</td>
+      <td>180.2371</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>69.7629</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>89396510</td>
+      <td>Bnil Nath</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>534.2096</td>
+      <td>534.2096</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-84.2096</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>138596691</td>
+      <td>Chanakya Chowdari</td>
+      <td>0.0000</td>
+      <td>6.3294</td>
+      <td>1042.9657</td>
+      <td>1068.2833</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-618.2833</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>8009403</td>
+      <td>Chethan CJ</td>
+      <td>10.5828</td>
+      <td>15.0132</td>
+      <td>354.9445</td>
+      <td>446.7457</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-96.7457</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>26228884</td>
+      <td>Deerendra CR  Team BCC ®</td>
+      <td>29.3234</td>
+      <td>0.0000</td>
+      <td>394.1838</td>
+      <td>482.1540</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-32.1540</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>1609095</td>
+      <td>Dileesh Onniyil</td>
+      <td>76.7742</td>
+      <td>0.0000</td>
+      <td>253.2964</td>
+      <td>483.6190</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-33.6190</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>89491458</td>
+      <td>Dinesh Babu Jothilingam</td>
+      <td>9.2971</td>
+      <td>10.2817</td>
+      <td>362.0765</td>
+      <td>431.0946</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-81.0946</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>51167119</td>
+      <td>Dnyaneshwar Pawar</td>
+      <td>7.2772</td>
+      <td>45.6156</td>
+      <td>377.9496</td>
+      <td>582.2436</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-232.2436</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>221000</td>
+      <td>Doug Murphy</td>
+      <td>0.0000</td>
+      <td>19.2662</td>
+      <td>181.6969</td>
+      <td>258.7617</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>91.2383</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>33965368</td>
+      <td>DR TUKARAM GADEKAR</td>
+      <td>0.0000</td>
+      <td>47.4647</td>
+      <td>749.3027</td>
+      <td>939.1615</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-489.1615</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>102975470</td>
+      <td>Ganesh Gowtham Guptha</td>
+      <td>14.9993</td>
+      <td>0.0000</td>
+      <td>502.0560</td>
+      <td>547.0539</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-197.0539</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>44726894</td>
+      <td>Geeta Manian</td>
+      <td>9.0084</td>
+      <td>0.0000</td>
+      <td>217.9118</td>
+      <td>244.9370</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>105.0630</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>19779459</td>
+      <td>Giridhar 🚴🏻‍♀️ Team NWCG</td>
+      <td>2.8050</td>
+      <td>7.5300</td>
+      <td>781.5970</td>
+      <td>820.1320</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-370.1320</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>26131471</td>
+      <td>Gokul S</td>
+      <td>6.9382</td>
+      <td>5.0133</td>
+      <td>983.1820</td>
+      <td>1024.0498</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-574.0498</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>93788550</td>
+      <td>Heyram Kruthik 🇮🇳🇮🇳</td>
+      <td>5.8480</td>
+      <td>0.0000</td>
+      <td>356.0679</td>
+      <td>373.6119</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>76.3881</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>13513751</td>
+      <td>Jagdeep M</td>
+      <td>0.0000</td>
+      <td>5.1943</td>
+      <td>0.0000</td>
+      <td>20.7772</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>329.2228</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>102289276</td>
+      <td>Jeya Viknesh</td>
+      <td>1.1716</td>
+      <td>0.0000</td>
+      <td>818.4650</td>
+      <td>821.9798</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-471.9798</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>32470989</td>
+      <td>Kesavakrishnan (K7)</td>
+      <td>2.3516</td>
+      <td>0.0000</td>
+      <td>153.6460</td>
+      <td>160.7008</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>189.2992</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>20824154</td>
+      <td>Kiran Nath</td>
+      <td>10.2708</td>
+      <td>5.0734</td>
+      <td>245.7499</td>
+      <td>296.8559</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>-46.8559</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>66986677</td>
+      <td>Kiran Gopinadhan</td>
+      <td>24.1407</td>
+      <td>10.2695</td>
+      <td>324.4884</td>
+      <td>437.9885</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-87.9885</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>155198261</td>
+      <td>Lokesh Kumar TS</td>
+      <td>115.5475</td>
+      <td>43.6807</td>
+      <td>61.1188</td>
+      <td>582.4841</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-232.4841</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>83461364</td>
+      <td>M Peer Mohamed Sardhar</td>
+      <td>11.0693</td>
+      <td>0.0000</td>
+      <td>1102.3340</td>
+      <td>1135.5419</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-685.5419</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>56978638</td>
+      <td>Madhu Mandanna</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>329.9614</td>
+      <td>329.9614</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>120.0386</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>89882106</td>
+      <td>Mahaprabhu Chockalingam</td>
+      <td>2.6701</td>
+      <td>140.8653</td>
+      <td>139.4823</td>
+      <td>710.9538</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-260.9538</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>88231904</td>
+      <td>Mahendra Ch</td>
+      <td>0.0000</td>
+      <td>25.7384</td>
+      <td>517.4548</td>
+      <td>620.4084</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-170.4084</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>105131592</td>
+      <td>Maltesh Doddamani</td>
+      <td>7.2004</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>21.6012</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>328.3988</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>41553110</td>
+      <td>Manoj Manoharan</td>
+      <td>117.4397</td>
+      <td>0.0000</td>
+      <td>709.9164</td>
+      <td>1062.2355</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-612.2355</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>26425286</td>
+      <td>Meera Ramanarayanan</td>
+      <td>17.1199</td>
+      <td>0.0000</td>
+      <td>869.1751</td>
+      <td>920.5348</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-470.5348</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>134655629</td>
+      <td>Melvin George</td>
+      <td>3.2912</td>
+      <td>0.0000</td>
+      <td>196.4268</td>
+      <td>206.3004</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>143.6996</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>66351348</td>
+      <td>Meyyappan Lakshmanan</td>
+      <td>25.5573</td>
+      <td>145.4411</td>
+      <td>108.1793</td>
+      <td>766.6156</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>-516.6156</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>11461688</td>
+      <td>Mitesh Moonat</td>
+      <td>17.0901</td>
+      <td>7.5372</td>
+      <td>253.8344</td>
+      <td>335.2535</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>14.7465</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>146372140</td>
+      <td>Monty Yadappa</td>
+      <td>15.1942</td>
+      <td>8.9832</td>
+      <td>524.6780</td>
+      <td>606.1934</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-156.1934</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>66681541</td>
+      <td>Muthu Lakshmanan</td>
+      <td>4.6977</td>
+      <td>10.9121</td>
+      <td>70.6573</td>
+      <td>128.3988</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>121.6012</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>8101716</td>
+      <td>MuthuRaj SN</td>
+      <td>0.0000</td>
+      <td>4.0496</td>
+      <td>244.9315</td>
+      <td>261.1299</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>88.8701</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>107553436</td>
+      <td>Nageshwar Reddy</td>
+      <td>42.4961</td>
+      <td>0.0000</td>
+      <td>807.6528</td>
+      <td>935.1411</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-485.1411</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>106590102</td>
+      <td>Naveen Narayanan</td>
+      <td>4.5060</td>
+      <td>0.1800</td>
+      <td>71.5496</td>
+      <td>85.7876</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>164.2124</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>61476437</td>
+      <td>Pachappan M 🇮🇳🇮🇳🇮🇳</td>
+      <td>10.5779</td>
+      <td>0.0000</td>
+      <td>935.6025</td>
+      <td>967.3362</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-517.3362</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>30792002</td>
+      <td>Pavan Madhusudhan</td>
+      <td>1.3139</td>
+      <td>0.0000</td>
+      <td>74.5878</td>
+      <td>78.5295</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>371.4705</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>68902409</td>
+      <td>pawan gupta</td>
+      <td>33.0059</td>
+      <td>0.0000</td>
+      <td>19.3948</td>
+      <td>118.4125</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>231.5875</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>71790012</td>
+      <td>Pradip Take #Team IAS</td>
+      <td>124.3081</td>
+      <td>28.1212</td>
+      <td>154.1889</td>
+      <td>639.5980</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-289.5980</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>30968537</td>
+      <td>Prasad Pujari</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>307.1163</td>
+      <td>307.1163</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>142.8837</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>154836562</td>
+      <td>Prathiksha B</td>
+      <td>31.3215</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>93.9645</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>156.0355</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>96483346</td>
+      <td>Prem C</td>
+      <td>23.1407</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>69.4221</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>180.5779</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>139006932</td>
+      <td>Premanka Majumder</td>
+      <td>7.5553</td>
+      <td>0.0000</td>
+      <td>815.0617</td>
+      <td>837.7276</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-387.7276</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>114409901</td>
+      <td>Priyavardhini: Team NWCG</td>
+      <td>3.5652</td>
+      <td>6.1576</td>
+      <td>281.4368</td>
+      <td>316.7628</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>33.2372</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>51597806</td>
+      <td>Puneeth Kakarla</td>
+      <td>15.7432</td>
+      <td>78.5508</td>
+      <td>35.1375</td>
+      <td>396.5703</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>53.4297</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>21427761</td>
+      <td>Radha Madhava</td>
+      <td>113.2942</td>
+      <td>0.0000</td>
+      <td>138.8539</td>
+      <td>478.7365</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-128.7365</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>36029179</td>
+      <td>Rajan ATR</td>
+      <td>0.9058</td>
+      <td>0.0000</td>
+      <td>471.3957</td>
+      <td>474.1131</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-24.1131</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>42587336</td>
+      <td>Rajesh Karunakaran</td>
+      <td>24.2080</td>
+      <td>55.2912</td>
+      <td>20.7355</td>
+      <td>314.5243</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>-64.5243</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>41530812</td>
+      <td>Raju BN</td>
+      <td>0.0000</td>
+      <td>111.1084</td>
+      <td>379.7898</td>
+      <td>824.2234</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>-574.2234</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>61679552</td>
+      <td>Rakesh kumar</td>
+      <td>37.6140</td>
+      <td>53.3190</td>
+      <td>15.3489</td>
+      <td>341.4669</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>8.5331</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>108332975</td>
+      <td>Rambabu Dola</td>
+      <td>9.6649</td>
+      <td>0.0000</td>
+      <td>240.7351</td>
+      <td>269.7298</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>80.2702</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>102215387</td>
+      <td>Ramji .</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>196.3019</td>
+      <td>196.3019</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>53.6981</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>74101248</td>
+      <td>Ranga Raj 🇮🇳</td>
+      <td>30.2553</td>
+      <td>54.3133</td>
+      <td>51.5566</td>
+      <td>359.5757</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>90.4243</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>46405358</td>
+      <td>Roshan Ganapathy</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>839.1123</td>
+      <td>839.1123</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-389.1123</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>90043281</td>
+      <td>Rupesh P V</td>
+      <td>5.7096</td>
+      <td>0.0000</td>
+      <td>311.4383</td>
+      <td>328.5671</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>21.4329</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>76447642</td>
+      <td>Sachin Mudholkar 🇮🇳</td>
+      <td>1.3565</td>
+      <td>0.0000</td>
+      <td>621.7103</td>
+      <td>625.7798</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-275.7798</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>105832797</td>
+      <td>Sachin Shinde 🏊🚴🏃🇮🇳</td>
+      <td>16.6894</td>
+      <td>92.1120</td>
+      <td>413.1873</td>
+      <td>831.7035</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-381.7035</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>128126299</td>
+      <td>Satheesh Veerapandian</td>
+      <td>48.2828</td>
+      <td>0.0000</td>
+      <td>10.5523</td>
+      <td>155.4007</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>94.5993</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>66035989</td>
+      <td>Satish B</td>
+      <td>15.8195</td>
+      <td>0.0000</td>
+      <td>858.6922</td>
+      <td>906.1507</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-456.1507</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>43566033</td>
+      <td>Senthil Kumar J 🌺</td>
+      <td>29.0553</td>
+      <td>0.0000</td>
+      <td>901.1936</td>
+      <td>988.3595</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-638.3595</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>101635745</td>
+      <td>Shalini Verma</td>
+      <td>4.1225</td>
+      <td>15.3923</td>
+      <td>187.2581</td>
+      <td>261.1948</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>-11.1948</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>78216959</td>
+      <td>Shanmugam Avudaiyappan</td>
+      <td>29.4110</td>
+      <td>0.0000</td>
+      <td>89.7161</td>
+      <td>177.9491</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>172.0509</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>110711220</td>
+      <td>Shantnu 🚴NWCG 🏃RRS</td>
+      <td>75.0411</td>
+      <td>30.5298</td>
+      <td>0.0000</td>
+      <td>347.2425</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>-97.2425</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>37757732</td>
+      <td>Shashank Hunsur</td>
+      <td>52.7517</td>
+      <td>10.0042</td>
+      <td>367.1905</td>
+      <td>565.4624</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-115.4624</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>64083750</td>
+      <td>Shreyas SK</td>
+      <td>5.3520</td>
+      <td>0.0000</td>
+      <td>301.5680</td>
+      <td>317.6240</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>-67.6240</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>11732772</td>
+      <td>Shubhadeep Sarkar</td>
+      <td>47.3537</td>
+      <td>1.2452</td>
+      <td>47.9445</td>
+      <td>194.9864</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>155.0136</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>24768476</td>
+      <td>Siddhant Bahuguna</td>
+      <td>12.5145</td>
+      <td>1.3042</td>
+      <td>0.0000</td>
+      <td>42.7603</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>307.2397</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>155698926</td>
+      <td>Siva V</td>
+      <td>39.8089</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>119.4267</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>130.5733</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>155146681</td>
+      <td>Srinivas S</td>
+      <td>70.8705</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>212.6115</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>37.3885</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>39035808</td>
+      <td>Subhransu Sethi</td>
+      <td>22.2503</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>66.7509</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>183.2491</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>23837468</td>
+      <td>Suchita Malhotra</td>
+      <td>41.3138</td>
+      <td>33.0619</td>
+      <td>122.2953</td>
+      <td>378.4843</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-28.4843</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>43540882</td>
+      <td>sudhakar Ramakrishnan 🇮🇳</td>
+      <td>160.1033</td>
+      <td>14.1449</td>
+      <td>0.0000</td>
+      <td>536.8895</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-86.8895</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>101569751</td>
+      <td>Sudhakar Gopalan</td>
+      <td>69.7099</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>209.1297</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>40.8703</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>41531737</td>
+      <td>sudhakaran bhoopal</td>
+      <td>48.2072</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>144.6216</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>205.3784</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>100986868</td>
+      <td>Sudhan Naik</td>
+      <td>28.3788</td>
+      <td>0.0000</td>
+      <td>509.8208</td>
+      <td>594.9572</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-244.9572</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>75584500</td>
+      <td>Sudhir Reddy</td>
+      <td>6.3636</td>
+      <td>3.6761</td>
+      <td>134.6867</td>
+      <td>168.4819</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>81.5181</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>20340436</td>
+      <td>Swathi Priya</td>
+      <td>22.3397</td>
+      <td>0.0000</td>
+      <td>153.3159</td>
+      <td>220.3350</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>129.6650</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>35369511</td>
+      <td>Tandava Venkata</td>
+      <td>46.0221</td>
+      <td>0.0000</td>
+      <td>531.0223</td>
+      <td>669.0886</td>
+      <td>Reindeer (Intermediate)</td>
+      <td>350</td>
+      <td>-319.0886</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>76953471</td>
+      <td>Thiru B</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>858.1686</td>
+      <td>858.1686</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-408.1686</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>104852815</td>
+      <td>Uday Raju</td>
+      <td>2.0901</td>
+      <td>0.0000</td>
+      <td>35.0123</td>
+      <td>41.2826</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>408.7174</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>12636156</td>
+      <td>VenuGopal Maddula</td>
+      <td>18.0362</td>
+      <td>0.0000</td>
+      <td>784.8212</td>
+      <td>838.9298</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-388.9298</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>82434501</td>
+      <td>Vijay Kumar M</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>30.2584</td>
+      <td>30.2584</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>219.7416</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>45934411</td>
+      <td>Vijay Prasad</td>
+      <td>12.7697</td>
+      <td>2.2482</td>
+      <td>468.2822</td>
+      <td>515.5841</td>
+      <td>Leopard (Pro Level)</td>
+      <td>450</td>
+      <td>-65.5841</td>
+      <td>Yet to be Completed</td>
+    </tr>
+    <tr>
+      <td>13752604</td>
+      <td>Vinyas Rai</td>
+      <td>21.4695</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>64.4085</td>
+      <td>Polar Bear(Beginner)</td>
+      <td>250</td>
+      <td>185.5915</td>
+      <td>Completed</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
