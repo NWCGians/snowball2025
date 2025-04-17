@@ -51,9 +51,19 @@
     </header>
 
     <div class="mb-6 text-center">
-      <label for="file-upload" class="mb-2 block text-gray-700">Upload your athlete data Excel file:</label>
-      <input type="file" id="file-upload" accept=".xlsx,.xls,.csv" class="p-2 border rounded mb-4 mx-auto">
-      <p class="text-sm text-gray-500">Or view the dashboard with sample data</p>
+      <!-- Admin section, can be password protected or hidden in production -->
+      <details class="mb-4 text-left inline-block">
+        <summary class="cursor-pointer p-2 bg-gray-200 rounded">Admin Area (Data Upload)</summary>
+        <div class="p-4 border rounded mt-2 bg-gray-100">
+          <label for="file-upload" class="mb-2 block text-gray-700">Upload athlete data Excel file:</label>
+          <input type="file" id="file-upload" accept=".xlsx,.xls,.csv" class="p-2 border rounded mb-2 w-full">
+          <div class="flex justify-between">
+            <button id="save-to-storage" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Save Data (Persists for All Users)</button>
+            <button id="clear-storage" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Clear Saved Data</button>
+          </div>
+          <p class="text-sm mt-2">Last updated: <span id="last-updated">Never</span></p>
+        </div>
+      </details>
     </div>
 
     <div class="mb-10 flex flex-wrap gap-4 justify-center">
@@ -183,6 +193,20 @@
     let monthlyChart = null;
     let athleteChart = null;
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const STORAGE_KEY = 'snowball_challenge_data';
+    const LAST_UPDATED_KEY = 'snowball_challenge_last_updated';
+    
+    // Check if localStorage is available
+    const isLocalStorageAvailable = (function() {
+      try {
+        const testKey = '__storage_test__';
+        localStorage.setItem(testKey, testKey);
+        localStorage.removeItem(testKey);
+        return true;
+      } catch (e) {
+        return false;
+      }
+    })();
     
     // Activity multipliers (as defined in your Python code)
     const activityMultipliers = {
@@ -199,13 +223,32 @@
       document.getElementById('search-input').addEventListener('input', updateLeaderboard);
       document.getElementById('chart-type').addEventListener('change', updateMonthlyChart);
       document.getElementById('athlete-select').addEventListener('change', displayAthleteDetail);
+      document.getElementById('save-to-storage').addEventListener('click', saveDataToStorage);
+      document.getElementById('clear-storage').addEventListener('click', clearStoredData);
       
-      // Load sample data if no file is uploaded within 3 seconds
-      setTimeout(() => {
-        if (athletesData.length === 0) {
-          loadSampleData();
-        }
-      }, 3000);
+      // Check that required libraries are loaded
+      if (typeof Chart === 'undefined') {
+        console.error('Chart.js library not loaded');
+        alert('Chart.js library could not be loaded. Please check your internet connection and refresh the page.');
+      }
+      
+      if (typeof XLSX === 'undefined') {
+        console.error('SheetJS library not loaded');
+        alert('SheetJS library could not be loaded. Please check your internet connection and refresh the page.');
+      }
+      
+      // Try to load data from local storage first
+      if (loadDataFromStorage()) {
+        // Data was successfully loaded from storage
+        updateLastUpdatedInfo();
+      } else {
+        // If no data in storage, load sample data after 3 seconds
+        setTimeout(() => {
+          if (athletesData.length === 0) {
+            loadSampleData();
+          }
+        }, 3000);
+      }
     });
 
     // Handle file upload
@@ -237,6 +280,113 @@
         hideLoading();
       };
       reader.readAsArrayBuffer(file);
+    }
+    
+    // Save data to local storage
+    function saveDataToStorage() {
+      if (athletesData.length === 0) {
+        alert('No data to save. Please upload a file first.');
+        return;
+      }
+      
+      if (!isLocalStorageAvailable) {
+        alert('Local storage is not available in your browser. This could be because you\'re using private browsing mode, have disabled storage in your browser settings, or are viewing this page locally via file:// URL. Data cannot be persisted.');
+        return;
+      }
+      
+      try {
+        // Check data size before attempting to save
+        const dataString = JSON.stringify(athletesData);
+        const sizeInMB = (dataString.length * 2) / (1024 * 1024);
+        
+        if (sizeInMB > 4) { // 4MB is a safe limit for most browsers
+          alert(`Data size (${sizeInMB.toFixed(2)} MB) may be too large for local storage. Try reducing the number of athletes or data points.`);
+          if (!confirm('Do you still want to try saving?')) {
+            return;
+          }
+        }
+        
+        localStorage.setItem(STORAGE_KEY, dataString);
+        const now = new Date();
+        localStorage.setItem(LAST_UPDATED_KEY, now.toISOString());
+        alert('Data successfully saved! All users will now see this data when they visit the page.');
+        updateLastUpdatedInfo();
+      } catch (error) {
+        console.error('Error saving data:', error);
+        alert('Error saving data. The file might be too large for local storage. Try reducing the amount of data.');
+      }
+    }
+    
+    // Load data from local storage
+    function loadDataFromStorage() {
+      if (!isLocalStorageAvailable) {
+        console.log('Local storage is not available, loading sample data instead');
+        return false;
+      }
+      
+      try {
+        const storedData = localStorage.getItem(STORAGE_KEY);
+        if (storedData) {
+          athletesData = JSON.parse(storedData);
+          processData();
+          return true;
+        }
+      } catch (error) {
+        console.error('Error loading data from storage:', error);
+        // If error occurs while parsing, clear corrupted data
+        try {
+          localStorage.removeItem(STORAGE_KEY);
+          localStorage.removeItem(LAST_UPDATED_KEY);
+        } catch (e) {
+          // Ignore further errors
+        }
+      }
+      return false;
+    }
+    
+    // Clear stored data
+    function clearStoredData() {
+      if (!isLocalStorageAvailable) {
+        alert('Local storage is not available in your browser.');
+        return;
+      }
+      
+      if (confirm('Are you sure you want to clear the saved data? All users will lose access to the current data.')) {
+        try {
+          localStorage.removeItem(STORAGE_KEY);
+          localStorage.removeItem(LAST_UPDATED_KEY);
+          athletesData = [];
+          alert('Data cleared. You can upload new data or sample data will be loaded.');
+          loadSampleData();
+          updateLastUpdatedInfo();
+        } catch (error) {
+          console.error('Error clearing data:', error);
+          alert('Error clearing data from storage.');
+        }
+      }
+    }
+    
+    // Update last updated info
+    function updateLastUpdatedInfo() {
+      const lastUpdatedElement = document.getElementById('last-updated');
+      
+      if (!isLocalStorageAvailable) {
+        lastUpdatedElement.textContent = 'Storage not available';
+        return;
+      }
+      
+      try {
+        const lastUpdated = localStorage.getItem(LAST_UPDATED_KEY);
+        if (lastUpdated) {
+          const date = new Date(lastUpdated);
+          lastUpdatedElement.textContent = date.toLocaleString();
+        } else {
+          lastUpdatedElement.textContent = 'Never';
+        }
+      } catch (error) {
+        console.error('Error reading last updated timestamp:', error);
+        lastUpdatedElement.textContent = 'Error reading timestamp';
+      }
     }
 
     // Load sample data
@@ -319,10 +469,15 @@
 
     // Process the data and update UI
     function processData() {
-      updateAthletesDropdown();
-      updateDashboardSummary();
-      updateMonthlyChart();
-      updateLeaderboard();
+      try {
+        updateAthletesDropdown();
+        updateDashboardSummary();
+        updateMonthlyChart();
+        updateLeaderboard();
+      } catch (error) {
+        console.error('Error processing data:', error);
+        alert('Error processing data. Please check the console for details.');
+      }
     }
 
     // Update the athletes dropdown
@@ -355,74 +510,100 @@
 
     // Update monthly chart
     function updateMonthlyChart() {
-      const chartType = document.getElementById('chart-type').value;
-      const ctx = document.getElementById('monthly-chart').getContext('2d');
-      
-      const monthlyTotals = months.map(month => {
-        let total = 0;
-        athletesData.forEach(athlete => {
-          if (chartType === 'snowball') {
-            total += athlete[`${month}_snowball`] || 0;
-          } else {
-            total += athlete[`${month}_${chartType.charAt(0).toUpperCase() + chartType.slice(1)}`] || 0;
-          }
-        });
-        return total;
-      });
-      
-      const chartTitle = chartType === 'snowball' 
-        ? 'Monthly Snowball Points'
-        : `Monthly ${chartType.charAt(0).toUpperCase() + chartType.slice(1)}ing Distance (km)`;
-      
-      const chartColor = {
-        'snowball': 'rgba(156, 39, 176, 0.7)',
-        'walk': 'rgba(33, 150, 243, 0.7)',
-        'run': 'rgba(76, 175, 80, 0.7)',
-        'ride': 'rgba(255, 152, 0, 0.7)'
-      };
-      
-      if (monthlyChart) {
-        monthlyChart.destroy();
-      }
-      
-      monthlyChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: months,
-          datasets: [{
-            label: chartTitle,
-            data: monthlyTotals,
-            backgroundColor: chartColor[chartType],
-            borderColor: chartColor[chartType].replace('0.7', '1'),
-            borderWidth: 1
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              display: false
-            },
-            title: {
-              display: true,
-              text: chartTitle,
-              font: {
-                size: 16
-              }
+      try {
+        const chartType = document.getElementById('chart-type').value;
+        const chartCanvas = document.getElementById('monthly-chart');
+        
+        if (!chartCanvas) {
+          console.error('Chart canvas element not found');
+          return;
+        }
+        
+        const ctx = chartCanvas.getContext('2d');
+        
+        if (!ctx) {
+          console.error('Could not get 2D context from canvas');
+          return;
+        }
+        
+        const monthlyTotals = months.map(month => {
+          let total = 0;
+          athletesData.forEach(athlete => {
+            if (chartType === 'snowball') {
+              total += parseFloat(athlete[`${month}_snowball`] || 0);
+            } else {
+              total += parseFloat(athlete[`${month}_${chartType.charAt(0).toUpperCase() + chartType.slice(1)}`] || 0);
             }
+          });
+          return total;
+        });
+        
+        const chartTitle = chartType === 'snowball' 
+          ? 'Monthly Snowball Points'
+          : `Monthly ${chartType.charAt(0).toUpperCase() + chartType.slice(1)}ing Distance (km)`;
+        
+        const chartColor = {
+          'snowball': 'rgba(156, 39, 176, 0.7)',
+          'walk': 'rgba(33, 150, 243, 0.7)',
+          'run': 'rgba(76, 175, 80, 0.7)',
+          'ride': 'rgba(255, 152, 0, 0.7)'
+        };
+        
+        // Check if Chart.js is available
+        if (typeof Chart === 'undefined') {
+          console.error('Chart.js library not loaded');
+          const errorMsg = document.createElement('div');
+          errorMsg.className = 'p-4 bg-red-100 text-red-800 rounded';
+          errorMsg.textContent = 'Chart.js library not loaded. Please check your internet connection.';
+          chartCanvas.parentNode.appendChild(errorMsg);
+          return;
+        }
+        
+        if (monthlyChart) {
+          monthlyChart.destroy();
+        }
+        
+        monthlyChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: months,
+            datasets: [{
+              label: chartTitle,
+              data: monthlyTotals,
+              backgroundColor: chartColor[chartType],
+              borderColor: chartColor[chartType].replace('0.7', '1'),
+              borderWidth: 1
+            }]
           },
-          scales: {
-            y: {
-              beginAtZero: true,
-              ticks: {
-                callback: function(value) {
-                  return Math.round(value).toLocaleString();
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                display: false
+              },
+              title: {
+                display: true,
+                text: chartTitle,
+                font: {
+                  size: 16
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: {
+                  callback: function(value) {
+                    return Math.round(value).toLocaleString();
+                  }
                 }
               }
             }
           }
-        }
-      });
+        });
+      } catch (error) {
+        console.error('Error updating monthly chart:', error);
+      }
     }
 
     // Update leaderboard table
