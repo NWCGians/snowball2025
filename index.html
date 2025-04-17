@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snowball Challenge 2025</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" defer></script>
   <style>
     .activity-walk { background-color: #e3f2fd; }
     .activity-run { background-color: #e8f5e9; }
@@ -217,39 +217,55 @@
 
     // Initialize the page
     document.addEventListener('DOMContentLoaded', function() {
-      // Set up event listeners
-      document.getElementById('file-upload').addEventListener('change', handleFileUpload);
-      document.getElementById('month-filter').addEventListener('change', updateLeaderboard);
-      document.getElementById('search-input').addEventListener('input', updateLeaderboard);
-      document.getElementById('chart-type').addEventListener('change', updateMonthlyChart);
-      document.getElementById('athlete-select').addEventListener('change', displayAthleteDetail);
-      document.getElementById('save-to-storage').addEventListener('click', saveDataToStorage);
-      document.getElementById('clear-storage').addEventListener('click', clearStoredData);
+      // Show loading indicator immediately
+      showLoading();
       
-      // Check that required libraries are loaded
-      if (typeof Chart === 'undefined') {
-        console.error('Chart.js library not loaded');
-        alert('Chart.js library could not be loaded. Please check your internet connection and refresh the page.');
-      }
-      
-      if (typeof XLSX === 'undefined') {
-        console.error('SheetJS library not loaded');
-        alert('SheetJS library could not be loaded. Please check your internet connection and refresh the page.');
-      }
-      
-      // Try to load data from local storage first
+      // Delay setup to allow UI to render first
+      setTimeout(() => {
+        // Set up event listeners
+        document.getElementById('file-upload').addEventListener('change', handleFileUpload);
+        document.getElementById('month-filter').addEventListener('change', updateLeaderboard);
+        document.getElementById('search-input').addEventListener('input', updateLeaderboard);
+        document.getElementById('chart-type').addEventListener('change', updateMonthlyChart);
+        document.getElementById('athlete-select').addEventListener('change', displayAthleteDetail);
+        document.getElementById('save-to-storage').addEventListener('click', saveDataToStorage);
+        document.getElementById('clear-storage').addEventListener('click', clearStoredData);
+        
+        // Check that required libraries are loaded - do this async
+        setTimeout(() => {
+          if (typeof Chart === 'undefined') {
+            console.error('Chart.js library not loaded');
+            alert('Chart.js library could not be loaded. Please check your internet connection and refresh the page.');
+          }
+          
+          if (typeof XLSX === 'undefined') {
+            console.error('SheetJS library not loaded');
+            alert('SheetJS library could not be loaded. Please check your internet connection and refresh the page.');
+          }
+        }, 1000);
+        
+        // Try to load data from local storage
+        loadDataOrSample();
+        
+        // Hide loading indicator
+        hideLoading();
+      }, 100);
+    });
+    
+    // Load data from storage or sample data
+    function loadDataOrSample() {
       if (loadDataFromStorage()) {
         // Data was successfully loaded from storage
         updateLastUpdatedInfo();
       } else {
-        // If no data in storage, load sample data after 3 seconds
+        // If no data in storage, load sample data after a delay
         setTimeout(() => {
           if (athletesData.length === 0) {
             loadSampleData();
           }
-        }, 3000);
+        }, 1000);
       }
-    });
+    }
 
     // Handle file upload
     function handleFileUpload(event) {
@@ -393,71 +409,61 @@
     function loadSampleData() {
       showLoading();
       
-      // Create sample data that matches your Excel structure
+      // Create smaller sample data
       athletesData = [];
       
-      // Add 10 sample athletes
-      for (let i = 1; i <= 10; i++) {
+      // Add just 5 sample athletes instead of 10
+      for (let i = 1; i <= 5; i++) {
         const athlete = {
           athlete_id: 1000 + i,
           firstname: `Athlete${i}`,
           lastname: `Runner`
         };
         
-        // Add monthly data for each activity type
+        // Add monthly data for each activity type - only for current and previous month
         let totalPoints = 0;
-        months.forEach(month => {
-          // Generate random distances
-          const walkDistance = Math.random() * 50;
-          const runDistance = Math.random() * 30;
-          const rideDistance = Math.random() * 100;
-          
-          // Calculate snowball points
-          const snowballPoints = 
-            walkDistance * activityMultipliers.Walk + 
-            runDistance * activityMultipliers.Run + 
-            rideDistance * activityMultipliers.Ride;
-          
-          // Add to athlete object
-          athlete[`${month}_Walk`] = walkDistance;
-          athlete[`${month}_Run`] = runDistance;
-          athlete[`${month}_Ride`] = rideDistance;
-          athlete[`${month}_snowball`] = snowballPoints;
-          
-          totalPoints += snowballPoints;
+        const currentMonth = new Date().getMonth();
+        
+        months.forEach((month, index) => {
+          // Only generate data for current and previous months
+          if (index <= currentMonth) {
+            // Generate smaller random distances
+            const walkDistance = Math.random() * 30;
+            const runDistance = Math.random() * 20;
+            const rideDistance = Math.random() * 50;
+            
+            // Calculate snowball points
+            const snowballPoints = 
+              walkDistance * activityMultipliers.Walk + 
+              runDistance * activityMultipliers.Run + 
+              rideDistance * activityMultipliers.Ride;
+            
+            // Add to athlete object
+            athlete[`${month}_Walk`] = walkDistance;
+            athlete[`${month}_Run`] = runDistance;
+            athlete[`${month}_Ride`] = rideDistance;
+            athlete[`${month}_snowball`] = snowballPoints;
+            
+            totalPoints += snowballPoints;
+          } else {
+            // Zero for future months
+            athlete[`${month}_Walk`] = 0;
+            athlete[`${month}_Run`] = 0;
+            athlete[`${month}_Ride`] = 0;
+            athlete[`${month}_snowball`] = 0;
+          }
         });
         
-        // Add some variety
-        if (i === 3) {
-          // Make this athlete a walker
-          months.forEach(month => {
-            athlete[`${month}_Walk`] *= 2;
-            athlete[`${month}_Run`] /= 2;
-            athlete[`${month}_snowball`] = 
-              athlete[`${month}_Walk`] * activityMultipliers.Walk + 
-              athlete[`${month}_Run`] * activityMultipliers.Run + 
-              athlete[`${month}_Ride`] * activityMultipliers.Ride;
-          });
-        } else if (i === 5) {
-          // Make this athlete a runner
-          months.forEach(month => {
-            athlete[`${month}_Walk`] /= 2;
-            athlete[`${month}_Run`] *= 2;
-            athlete[`${month}_snowball`] = 
-              athlete[`${month}_Walk`] * activityMultipliers.Walk + 
-              athlete[`${month}_Run`] * activityMultipliers.Run + 
-              athlete[`${month}_Ride`] * activityMultipliers.Ride;
-          });
-        } else if (i === 7) {
-          // Make this athlete a rider
-          months.forEach(month => {
-            athlete[`${month}_Walk`] /= 2;
-            athlete[`${month}_Ride`] *= 3;
-            athlete[`${month}_snowball`] = 
-              athlete[`${month}_Walk`] * activityMultipliers.Walk + 
-              athlete[`${month}_Run`] * activityMultipliers.Run + 
-              athlete[`${month}_Ride`] * activityMultipliers.Ride;
-          });
+        // Add some variety but with simplified calculations
+        if (i === 2) {
+          athlete.firstname = "Walker";
+          athlete.lastname = "Johnson";
+        } else if (i === 3) {
+          athlete.firstname = "Runner";
+          athlete.lastname = "Smith";
+        } else if (i === 4) {
+          athlete.firstname = "Rider";
+          athlete.lastname = "Davis";
         }
         
         athletesData.push(athlete);
@@ -606,7 +612,7 @@
       }
     }
 
-    // Update leaderboard table
+    // Update leaderboard table with pagination
     function updateLeaderboard() {
       const monthFilter = document.getElementById('month-filter').value;
       const searchInput = document.getElementById('search-input').value.toLowerCase();
@@ -627,16 +633,16 @@
         
         if (monthFilter === 'all') {
           months.forEach(month => {
-            totalWalk += athlete[`${month}_Walk`] || 0;
-            totalRun += athlete[`${month}_Run`] || 0;
-            totalRide += athlete[`${month}_Ride`] || 0;
-            totalSnowball += athlete[`${month}_snowball`] || 0;
+            totalWalk += parseFloat(athlete[`${month}_Walk`] || 0);
+            totalRun += parseFloat(athlete[`${month}_Run`] || 0);
+            totalRide += parseFloat(athlete[`${month}_Ride`] || 0);
+            totalSnowball += parseFloat(athlete[`${month}_snowball`] || 0);
           });
         } else {
-          totalWalk = athlete[`${monthFilter}_Walk`] || 0;
-          totalRun = athlete[`${monthFilter}_Run`] || 0;
-          totalRide = athlete[`${monthFilter}_Ride`] || 0;
-          totalSnowball = athlete[`${monthFilter}_snowball`] || 0;
+          totalWalk = parseFloat(athlete[`${monthFilter}_Walk`] || 0);
+          totalRun = parseFloat(athlete[`${monthFilter}_Run`] || 0);
+          totalRide = parseFloat(athlete[`${monthFilter}_Ride`] || 0);
+          totalSnowball = parseFloat(athlete[`${monthFilter}_snowball`] || 0);
         }
         
         athlete.totalWalk = totalWalk;
@@ -654,8 +660,11 @@
         return fullName.includes(searchInput);
       });
       
+      // Limit to first 50 athletes for performance (can be adjusted)
+      const displayAthletes = filteredAthletes.slice(0, 50);
+      
       // Create table rows
-      filteredAthletes.forEach((athlete, index) => {
+      displayAthletes.forEach((athlete, index) => {
         const fullName = `${athlete.firstname} ${athlete.lastname}`;
         
         // Skip if no activity in the selected month
@@ -685,12 +694,24 @@
       });
       
       // Show message if no results
-      if (filteredAthletes.length === 0) {
+      if (displayAthletes.length === 0) {
         const row = document.createElement('tr');
         row.innerHTML = `
           <td colspan="6" class="py-3 px-4 text-center">No athletes found</td>
         `;
         tableBody.appendChild(row);
+      }
+      
+      // Show count if filtered
+      if (filteredAthletes.length > displayAthletes.length) {
+        const countRow = document.createElement('tr');
+        countRow.className = 'bg-gray-100';
+        countRow.innerHTML = `
+          <td colspan="6" class="py-2 px-4 text-center text-sm">
+            Showing top 50 of ${filteredAthletes.length} athletes
+          </td>
+        `;
+        tableBody.appendChild(countRow);
       }
     }
 
