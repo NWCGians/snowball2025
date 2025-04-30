@@ -579,6 +579,289 @@
             100% { transform: scale(1); }
         }
         
+        /* Top Performers Banner */
+        .top-performers-banner {
+            position: relative;
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .banner-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .banner-title i {
+            margin-right: 10px;
+            font-size: 22px;
+            color: #ffeb3b;
+        }
+        
+        .banner-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path fill="white" d="M40,100 a60,60 0 1,0 120,0 a60,60 0 1,0 -120,0 M70,80 L130,80 M70,120 L130,120 M100,50 L100,150"></path></svg>');
+            background-repeat: repeat;
+            z-index: 0;
+        }
+        
+        .top-performers-list {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            scroll-behavior: smooth;
+        }
+        
+        .top-performer-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            min-width: 200px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+        
+        .top-performer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .top-performer-category {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+        
+        .top-performer-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .top-performer-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .stats-value {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .stats-label {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .performer-rank {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #f57c00;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 14px;
+            border: 2px solid white;
+        }
+        
+        .banner-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        
+        .scroll-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .scroll-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .scroll-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* Scroll indicators */
+        .scroll-indicator {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+        
+        .indicator-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        
+        .indicator-dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
+        /* All-Time Best Banner */
+        .all-time-best-banner {
+            position: relative;
+            background: linear-gradient(135deg, #7b1fa2, #6a1b9a);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .all-time-title {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .all-time-title i {
+            margin-right: 10px;
+            font-size: 22px;
+            color: #ffeb3b;
+        }
+        
+        .marquee-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 120px;
+        }
+        
+        .marquee {
+            position: absolute;
+            display: flex;
+            width: max-content;
+            animation: marqueeAnimation 30s linear infinite;
+            gap: 30px;
+            padding: 10px 0;
+        }
+        
+        .marquee:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes marqueeAnimation {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .best-rider-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 15px;
+            width: 250px;
+            backdrop-filter: blur(5px);
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .best-rider-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            z-index: 2;
+        }
+        
+        .rider-medal {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 40px;
+            height: 40px;
+            background: #ffc107;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border: 2px solid white;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transform: rotate(15deg);
+        }
+        
+        .rider-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .rider-category {
+            font-size: 12px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 12px;
+        }
+        
+        .rider-stats {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        
+        .rider-total {
+            font-size: 26px;
+            font-weight: 700;
+        }
+        
+        .rider-unit {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .achievement-badge {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+        
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .stats-container, .chart-container {
@@ -644,6 +927,10 @@
             background-color: rgba(255,255,255,0.03);
         }
         
+        body.dark-theme .all-time-best-banner {
+            background: linear-gradient(135deg, #4a148c, #311b92);
+        }
+        
         /* Snow animation for seasonal theme */
         .snowflake {
             position: fixed;
@@ -672,7 +959,7 @@
         <div class="header">
             <i class="theme-toggle fas fa-moon"></i>
             <h1>NWCG Snowball Challenge 2025 Dashboard</h1>
-            <div class="dashboard-date">Last updated: 2025-04-28</div>
+            <div class="dashboard-date">Last updated: 2025-04-30</div>
         </div>
         
         <div class="stats-container">
@@ -746,7 +1033,7 @@
         </div>
         
         <div class="footer">
-            Created with Python and Chart.js - NWCG Snowball Challenge 2025 Dashboard
+            Created by Namma Whitefield Cycling Club for Snowball Challenge 2025. Copyrighted to NWCG
             <div><i class="fas fa-snowflake"></i> Stay active, stay healthy! <i class="fas fa-snowflake"></i></div>
         </div>
     </div>
@@ -843,7 +1130,6 @@
                 categoryCardsContainer.appendChild(categoryCard);
             });
         }
-        
         // Create monthly progress chart using ApexCharts
         function createMonthlyProgressChart() {
             // Prepare data for the chart
@@ -977,11 +1263,7 @@
                     responsive: true,
                     order: [[5, 'desc']], // Sort by Progress by default
                     pageLength: 10,
-                    lengthMenu: [5, 10, 25, 50, 100],
-                    dom: 'Bfrtip',
-                    buttons: [
-                        'copy', 'excel', 'pdf'
-                    ]
+                    lengthMenu: [5, 10, 25, 50, 100]
                 });
                 
                 // Set up event listeners for view details buttons
@@ -997,6 +1279,8 @@
                     $('.stats-container').show();
                     $('.chart-container').show();
                     $('.category-cards').show();
+                    $('.top-performers-banner').show();
+                    $('.all-time-best-banner').show();
                 });
             });
         }
@@ -1008,6 +1292,8 @@
             $('.stats-container').hide();
             $('.chart-container').hide();
             $('.category-cards').hide();
+            $('.top-performers-banner').hide();
+            $('.all-time-best-banner').hide();
             $('#athlete-detail-view').show();
             
             // Find the athlete
@@ -1182,10 +1468,308 @@
                     themeToggle.classList.remove('fa-sun');
                     themeToggle.classList.add('fa-moon');
                 }
-                
-                // Redraw charts if needed
-                // This would require storing chart instances and calling update
             });
+        }
+        
+        // Top performers banner functionality
+        function addTopPerformersBanner() {
+            // Create HTML structure for the banner
+            const bannerHTML = `
+                <div class="top-performers-banner fade-in">
+                    <div class="banner-background"></div>
+                    <div class="banner-title">
+                        <i class="fas fa-trophy"></i> Top Performers This Month
+                    </div>
+                    <div class="top-performers-list" id="top-performers-list">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                    <div class="banner-controls">
+                        <button class="scroll-button" id="scroll-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="scroll-indicator" id="scroll-indicator">
+                            <!-- Will be populated dynamically -->
+                        </div>
+                        <button class="scroll-button" id="scroll-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            // Insert banner after the stats-container
+            const statsContainer = document.querySelector('.stats-container');
+            statsContainer.insertAdjacentHTML('afterend', bannerHTML);
+            
+            // Find top performers
+            const findTopPerformers = () => {
+                // Sort athletes by current month's snowball value
+                const currentMonth = months[currentDate.getMonth()];
+                const snowballCol = `${currentMonth}_snowball`;
+                
+                // Create a copy of athletes array and sort by snowball value
+                const sortedAthletes = [...athletes]
+                    .filter(athlete => athlete[snowballCol] > 0)  // Only include athletes with activity
+                    .sort((a, b) => (b[snowballCol] || 0) - (a[snowballCol] || 0));  // Sort descending
+                
+                // Get top 10 performers or less if fewer athletes
+                return sortedAthletes.slice(0, 10);
+            };
+            
+            // Populate top performers
+            const populateTopPerformers = () => {
+                const topPerformersList = document.getElementById('top-performers-list');
+                const topPerformers = findTopPerformers();
+                const currentMonth = months[currentDate.getMonth()];
+                const snowballCol = `${currentMonth}_snowball`;
+                const targetCol = `${currentMonth}_Target`;
+                
+                topPerformersList.innerHTML = '';
+                
+                topPerformers.forEach((athlete, index) => {
+                    // Get category color
+                    let categoryClass = 'polar-bear';
+                    if (athlete.Category) {
+                        if (athlete.Category.toLowerCase().includes('reindeer')) {
+                            categoryClass = 'reindeer';
+                        } else if (athlete.Category.toLowerCase().includes('leopard')) {
+                            categoryClass = 'leopard';
+                        }
+                    }
+                    
+                    // Calculate completion percentage
+                    const completed = athlete[snowballCol] || 0;
+                    const target = athlete[targetCol] || 0;
+                    const percentage = target > 0 ? Math.min(100, (completed / target) * 100).toFixed(0) : 0;
+                    
+                    // Create card
+                    const card = document.createElement('div');
+                    card.className = 'top-performer-card';
+                    card.innerHTML = `
+                        <div class="performer-rank">${index + 1}</div>
+                        <div class="top-performer-category">${athlete.Category || 'Unknown'}</div>
+                        <div class="top-performer-name">${athlete.firstname || ''} ${athlete.lastname || ''}</div>
+                        <div class="top-performer-stats">
+                            <div>
+                                <div class="stats-value">${completed.toFixed(1)}</div>
+                                <div class="stats-label">KM</div>
+                            </div>
+                            <div>
+                                <div class="stats-value">${percentage}%</div>
+                                <div class="stats-label">Complete</div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    topPerformersList.appendChild(card);
+                });
+                
+                // Setup scroll indicators
+                setupScrollIndicators(topPerformers.length);
+            };
+            
+            // Set up scroll indicators
+            const setupScrollIndicators = (count) => {
+                const scrollIndicator = document.getElementById('scroll-indicator');
+                scrollIndicator.innerHTML = '';
+                
+                // Create dots based on how many cards would be visible
+                const containerWidth = document.getElementById('top-performers-list').offsetWidth;
+                const cardWidth = 220; // Card width + gap
+                const visibleCards = Math.floor(containerWidth / cardWidth);
+                const totalDots = Math.ceil(count / visibleCards);
+                
+                for (let i = 0; i < totalDots; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = i === 0 ? 'indicator-dot active' : 'indicator-dot';
+                    dot.dataset.index = i;
+                    dot.addEventListener('click', () => scrollToPosition(i));
+                    scrollIndicator.appendChild(dot);
+                }
+            };
+            
+            // Scroll to position
+            const scrollToPosition = (index) => {
+                const container = document.getElementById('top-performers-list');
+                const cardWidth = 220; // Card width + gap
+                const containerWidth = container.offsetWidth;
+                const visibleCards = Math.floor(containerWidth / cardWidth);
+                
+                container.scrollTo({
+                    left: index * visibleCards * cardWidth,
+                    behavior: 'smooth'
+                });
+                
+                // Update indicators
+                document.querySelectorAll('.indicator-dot').forEach(dot => {
+                    dot.classList.remove('active');
+                });
+                document.querySelector(`.indicator-dot[data-index="${index}"]`).classList.add('active');
+            };
+            
+            // Set up scroll buttons
+            const setupScrollButtons = () => {
+                const container = document.getElementById('top-performers-list');
+                const leftBtn = document.getElementById('scroll-left');
+                const rightBtn = document.getElementById('scroll-right');
+                
+                // Update button states
+                const updateButtonStates = () => {
+                    leftBtn.disabled = container.scrollLeft <= 10;
+                    rightBtn.disabled = container.scrollLeft >= container.scrollWidth - container.offsetWidth - 10;
+                    
+                    // Update active indicator
+                    const cardWidth = 220;
+                    const containerWidth = container.offsetWidth;
+                    const visibleCards = Math.floor(containerWidth / cardWidth);
+                    const currentIndex = Math.round(container.scrollLeft / (visibleCards * cardWidth));
+                    
+                    document.querySelectorAll('.indicator-dot').forEach(dot => {
+                        dot.classList.remove('active');
+                    });
+                    
+                    const activeDot = document.querySelector(`.indicator-dot[data-index="${currentIndex}"]`);
+                    if (activeDot) activeDot.classList.add('active');
+                };
+                
+                // Initial update
+                updateButtonStates();
+                
+                // Listen for scroll events
+                container.addEventListener('scroll', updateButtonStates);
+                
+                // Setup button click handlers
+                leftBtn.addEventListener('click', () => {
+                    const cardWidth = 220;
+                    const containerWidth = container.offsetWidth;
+                    const visibleCards = Math.floor(containerWidth / cardWidth);
+                    container.scrollBy({
+                        left: -visibleCards * cardWidth,
+                        behavior: 'smooth'
+                    });
+                });
+                
+                rightBtn.addEventListener('click', () => {
+                    const cardWidth = 220;
+                    const containerWidth = container.offsetWidth;
+                    const visibleCards = Math.floor(containerWidth / cardWidth);
+                    container.scrollBy({
+                        left: visibleCards * cardWidth,
+                        behavior: 'smooth'
+                    });
+                });
+            };
+            
+            // Initialize
+            populateTopPerformers();
+            setupScrollButtons();
+            
+            return {
+                refreshTopPerformers: populateTopPerformers
+            };
+        }
+        
+        // Add All-Time Best Riders banner 
+        function addAllTimeBestRidersBanner() {
+            // Create HTML structure for the banner
+            const bannerHTML = `
+                <div class="all-time-best-banner fade-in">
+                    <div class="all-time-title">
+                        <i class="fas fa-medal"></i> All-Time Best Riders
+                    </div>
+                    <div class="marquee-container">
+                        <div class="marquee" id="all-time-marquee">
+                            <!-- Will be populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Insert banner before the athlete-table-container
+            const tableContainer = document.querySelector('.athlete-table-container');
+            tableContainer.insertAdjacentHTML('beforebegin', bannerHTML);
+            
+            // Find all-time best riders
+            const findAllTimeBestRiders = () => {
+                // Sort athletes by Grand_Total
+                return [...athletes]
+                    .filter(athlete => athlete.Grand_Total > 0)
+                    .sort((a, b) => (b.Grand_Total || 0) - (a.Grand_Total || 0))
+                    .slice(0, 10);
+            };
+            
+            // Create medal emoji based on position
+            const getMedalEmoji = (position) => {
+                switch(position) {
+                    case 0: return '🥇';
+                    case 1: return '🥈';
+                    case 2: return '🥉';
+                    default: return `<i class="fas fa-award"></i>`;
+                }
+            };
+            
+            // Get achievement text
+            const getAchievement = (athlete) => {
+                const total = athlete.Grand_Total || 0;
+                
+                if (total > 10000) return 'Elite Champion';
+                if (total > 5000) return 'Master Rider';
+                if (total > 2500) return 'Expert Rider';
+                if (total > 1000) return 'Advanced Rider';
+                if (total > 500) return 'Enthusiast';
+                return 'Dedicated Rider';
+            };
+            
+            // Populate all-time best riders
+            const populateAllTimeBestRiders = () => {
+                const marquee = document.getElementById('all-time-marquee');
+                const bestRiders = findAllTimeBestRiders();
+                
+                // Create initial set of cards
+                bestRiders.forEach((athlete, index) => {
+                    const card = createRiderCard(athlete, index);
+                    marquee.appendChild(card);
+                });
+                
+                // Duplicate cards for smooth loop
+                bestRiders.forEach((athlete, index) => {
+                    const card = createRiderCard(athlete, index);
+                    marquee.appendChild(card);
+                });
+            };
+            
+            // Create rider card
+            const createRiderCard = (athlete, index) => {
+                const card = document.createElement('div');
+                card.className = 'best-rider-card';
+                
+                // Get achievement
+                const achievement = getAchievement(athlete);
+                
+                card.innerHTML = `
+                    <div class="rider-medal">${getMedalEmoji(index)}</div>
+                    <div class="rider-name">${athlete.firstname || ''} ${athlete.lastname || ''}</div>
+                    <div class="rider-category">${athlete.Category || 'Unknown'}</div>
+                    <div class="achievement-badge">
+                        <i class="fas fa-star"></i> ${achievement}
+                    </div>
+                    <div class="rider-stats">
+                        <div>
+                            <div class="rider-total">${Math.round(athlete.Grand_Total || 0).toLocaleString()}</div>
+                            <div class="rider-unit">total km</div>
+                        </div>
+                    </div>
+                `;
+                
+                return card;
+            };
+            
+            // Initialize
+            populateAllTimeBestRiders();
+            
+            return {
+                refreshAllTimeBestRiders: populateAllTimeBestRiders
+            };
         }
         
         // Seasonal theme with snowflakes
@@ -1226,9 +1810,30 @@
             container.appendChild(seasonalToggle);
         }
         
+        // Enhanced initialization function
+        function enhancedInitDashboard() {
+            // Original dashboard initialization
+            initDashboard();
+            
+            // Add top performers banner
+            const topPerformersManager = addTopPerformersBanner();
+            
+            // Add all-time best riders banner
+            const allTimeBestManager = addAllTimeBestRidersBanner();
+            
+            // Create refresh function that updates all dashboard components
+            window.refreshDashboard = () => {
+                // Refresh top performers
+                topPerformersManager.refreshTopPerformers();
+                
+                // Refresh all-time best riders
+                allTimeBestManager.refreshAllTimeBestRiders();
+            };
+        }
+
         // Initialize the dashboard when the page loads
         document.addEventListener('DOMContentLoaded', function() {
-            initDashboard();
+            enhancedInitDashboard();
             addSeasonalThemeToggle();
         });
     </script>
