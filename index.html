@@ -172,58 +172,107 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         
-        .leaderboard-header {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .activity-btn {
-            background: #e2e8f0;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-        
-        .activity-btn.active {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-        }
-        
-        .leaderboard-list {
-            display: grid;
-            gap: 10px;
-        }
-        
-        .leaderboard-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background: #f7fafc;
+        .leaderboard-table-container {
+            overflow-x: auto;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
-        .rank {
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            min-width: 1000px;
+        }
+        
+        .leaderboard-table th,
+        .leaderboard-table td {
+            padding: 12px 8px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .activity-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
             font-weight: bold;
-            color: #667eea;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
-        .athlete-name {
+        .walking-header {
+            background: linear-gradient(135deg, #4CAF50, #45a049) !important;
+        }
+        
+        .running-header {
+            background: linear-gradient(135deg, #FF6B6B, #ee5a52) !important;
+        }
+        
+        .cycling-header {
+            background: linear-gradient(135deg, #4ECDC4, #44a08d) !important;
+        }
+        
+        .leaderboard-table thead tr:nth-child(2) th {
+            background: #f8f9fa;
             font-weight: 600;
-            flex-grow: 1;
-            margin-left: 15px;
+            color: #2d3748;
         }
         
-        .distance {
+        .rank-col {
+            width: 8%;
             font-weight: bold;
-            color: #2d3748;
+        }
+        
+        .name-col {
+            width: 25%;
+            text-align: left !important;
+        }
+        
+        .category-col {
+            width: 20%;
+            font-size: 0.85rem;
+        }
+        
+        .distance-col {
+            width: 12%;
+            font-weight: bold;
+        }
+        
+        .leaderboard-table tbody tr:nth-child(odd) {
+            background: #f8f9fa;
+        }
+        
+        .leaderboard-table tbody tr:hover {
+            background: #e3f2fd;
+            transform: scale(1.01);
+            transition: all 0.2s ease;
+        }
+        
+        .rank-1 { color: #FFD700; font-weight: bold; }
+        .rank-2 { color: #C0C0C0; font-weight: bold; }
+        .rank-3 { color: #CD7F32; font-weight: bold; }
+        
+        .category-badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .category-beginner {
+            background: #E3F2FD;
+            color: #1976D2;
+        }
+        
+        .category-intermediate {
+            background: #FFF3E0;
+            color: #F57C00;
+        }
+        
+        .category-pro {
+            background: #F3E5F5;
+            color: #7B1FA2;
         }
         
         .target-completion {
@@ -368,12 +417,33 @@
 
             <div class="leaderboard">
                 <div class="chart-title">🏆 Top Performers by Activity</div>
-                <div class="leaderboard-header">
-                    <button class="activity-btn active" onclick="showLeaderboard('Walk')">🚶‍♂️ Walking</button>
-                    <button class="activity-btn" onclick="showLeaderboard('Run')">🏃‍♂️ Running</button>
-                    <button class="activity-btn" onclick="showLeaderboard('Ride')">🚴‍♂️ Cycling</button>
+                <div class="leaderboard-table-container">
+                    <table class="leaderboard-table" id="leaderboardTable">
+                        <thead>
+                            <tr>
+                                <th colspan="4" class="activity-header walking-header">🚶‍♂️ WALKING CHAMPIONS</th>
+                                <th colspan="4" class="activity-header running-header">🏃‍♂️ RUNNING CHAMPIONS</th>
+                                <th colspan="4" class="activity-header cycling-header">🚴‍♂️ CYCLING CHAMPIONS</th>
+                            </tr>
+                            <tr>
+                                <th class="rank-col">Rank</th>
+                                <th class="name-col">Athlete</th>
+                                <th class="category-col">Category</th>
+                                <th class="distance-col">Distance (km)</th>
+                                <th class="rank-col">Rank</th>
+                                <th class="name-col">Athlete</th>
+                                <th class="category-col">Category</th>
+                                <th class="distance-col">Distance (km)</th>
+                                <th class="rank-col">Rank</th>
+                                <th class="name-col">Athlete</th>
+                                <th class="category-col">Category</th>
+                                <th class="distance-col">Distance (km)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboardTableBody">
+                        </tbody>
+                    </table>
                 </div>
-                <div class="leaderboard-list" id="leaderboardList"></div>
             </div>
 
             <div class="target-completion">
@@ -541,8 +611,8 @@
             renderTargetChart();
             renderCategoryChart();
             
-            // Show leaderboards
-            showLeaderboard('Walk');
+            // Show unified leaderboard table
+            renderLeaderboardTable();
             renderTargetCompletion();
         }
 
@@ -657,40 +727,99 @@
             });
         }
 
-        function showLeaderboard(activity) {
-            // Update active button
-            document.querySelectorAll('.activity-btn').forEach(btn => btn.classList.remove('active'));
-            document.querySelector(`.activity-btn[onclick*="${activity}"]`).classList.add('active');
+        function renderLeaderboardTable() {
+            const activities = ['Walk', 'Run', 'Ride'];
+            const leaderboards = {};
+            
+            // Calculate leaderboards for all activities
+            activities.forEach(activity => {
+                leaderboards[activity] = enrichedData.map(athlete => {
+                    let totalDistance = 0;
+                    for (let i = 0; i < months.length; i++) {
+                        totalDistance += athlete._originalData[`${months[i]}_${activity}`] || 0;
+                    }
+                    
+                    return {
+                        name: `${athlete.firstname} ${athlete.lastname}`,
+                        distance: totalDistance,
+                        category: athlete.category
+                    };
+                })
+                .filter(item => item.distance > 0)
+                .sort((a, b) => b.distance - a.distance)
+                .slice(0, 10);
+            });
 
-            // Calculate total distance for the activity efficiently
-            const leaderboard = enrichedData.map(athlete => {
-                let totalDistance = 0;
-                for (let i = 0; i < months.length; i++) {
-                    totalDistance += athlete._originalData[`${months[i]}_${activity}`] || 0;
-                }
+            // Generate table rows
+            const maxRows = Math.max(
+                leaderboards.Walk.length,
+                leaderboards.Run.length,
+                leaderboards.Ride.length
+            );
+
+            let tableRows = '';
+            for (let i = 0; i < maxRows; i++) {
+                const walkData = leaderboards.Walk[i];
+                const runData = leaderboards.Run[i];
+                const rideData = leaderboards.Ride[i];
+
+                tableRows += '<tr>';
                 
-                return {
-                    name: `${athlete.firstname} ${athlete.lastname}`,
-                    distance: totalDistance,
-                    category: athlete.category
-                };
-            })
-            .filter(item => item.distance > 0)
-            .sort((a, b) => b.distance - a.distance)
-            .slice(0, 10);
+                // Walking column
+                if (walkData) {
+                    const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
+                    const categoryClass = walkData.category.includes('Polar Bear') ? 'category-beginner' :
+                                         walkData.category.includes('Reindeer') ? 'category-intermediate' :
+                                         walkData.category.includes('Leopard') ? 'category-pro' : '';
+                    
+                    tableRows += `
+                        <td class="rank-col ${rankClass}">#${i + 1}</td>
+                        <td class="name-col">${walkData.name}</td>
+                        <td class="category-col"><span class="category-badge ${categoryClass}">${walkData.category}</span></td>
+                        <td class="distance-col">${walkData.distance.toFixed(1)}</td>
+                    `;
+                } else {
+                    tableRows += '<td></td><td></td><td></td><td></td>';
+                }
 
-            const listHtml = leaderboard.map((item, index) => `
-                <div class="leaderboard-item">
-                    <span class="rank">#${index + 1}</span>
-                    <div class="athlete-name">
-                        ${item.name}
-                        <div class="athlete-category">${item.category}</div>
-                    </div>
-                    <span class="distance">${item.distance.toFixed(1)} km</span>
-                </div>
-            `).join('');
+                // Running column
+                if (runData) {
+                    const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
+                    const categoryClass = runData.category.includes('Polar Bear') ? 'category-beginner' :
+                                         runData.category.includes('Reindeer') ? 'category-intermediate' :
+                                         runData.category.includes('Leopard') ? 'category-pro' : '';
+                    
+                    tableRows += `
+                        <td class="rank-col ${rankClass}">#${i + 1}</td>
+                        <td class="name-col">${runData.name}</td>
+                        <td class="category-col"><span class="category-badge ${categoryClass}">${runData.category}</span></td>
+                        <td class="distance-col">${runData.distance.toFixed(1)}</td>
+                    `;
+                } else {
+                    tableRows += '<td></td><td></td><td></td><td></td>';
+                }
 
-            document.getElementById('leaderboardList').innerHTML = listHtml;
+                // Cycling column
+                if (rideData) {
+                    const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
+                    const categoryClass = rideData.category.includes('Polar Bear') ? 'category-beginner' :
+                                         rideData.category.includes('Reindeer') ? 'category-intermediate' :
+                                         rideData.category.includes('Leopard') ? 'category-pro' : '';
+                    
+                    tableRows += `
+                        <td class="rank-col ${rankClass}">#${i + 1}</td>
+                        <td class="name-col">${rideData.name}</td>
+                        <td class="category-col"><span class="category-badge ${categoryClass}">${rideData.category}</span></td>
+                        <td class="distance-col">${rideData.distance.toFixed(1)}</td>
+                    `;
+                } else {
+                    tableRows += '<td></td><td></td><td></td><td></td>';
+                }
+
+                tableRows += '</tr>';
+            }
+
+            document.getElementById('leaderboardTableBody').innerHTML = tableRows;
         }
 
         function renderTargetCompletion() {
@@ -728,13 +857,9 @@
             document.getElementById('completionList').innerHTML = listHtml;
         }
 
-        // Initialize leaderboard buttons
-        document.querySelectorAll('.activity-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const activity = this.textContent.includes('Walking') ? 'Walk' :
-                                this.textContent.includes('Running') ? 'Run' : 'Ride';
-                showLeaderboard(activity);
-            });
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Dashboard initialized');
         });
     </script>
 </body>
