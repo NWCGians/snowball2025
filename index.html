@@ -452,60 +452,75 @@
 
             document.getElementById('loading').style.display = 'block';
             
-            setTimeout(() => {
+            // Process immediately without artificial delay
+            try {
                 processData();
                 renderDashboard();
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('dashboard').style.display = 'block';
-            }, 1000);
+            } catch (error) {
+                console.error('Error processing data:', error);
+                document.getElementById('loading').style.display = 'none';
+                alert('Error processing data. Please check your files and try again.');
+            }
         }
 
         function processData() {
-            // Enrich athlete data with levels and calculate completion
+            // Create lookup maps for faster processing
+            const levelLookup = {};
+            levelsData.forEach(level => {
+                levelLookup[level.athlete_id] = level[' Category '] || level['Category'] || 'Unknown';
+            });
+
+            // Pre-calculate target lookup for faster access
+            const targetLookup = {};
+            categoryTargets.forEach((categoryTarget, index) => {
+                targetLookup[index] = {
+                    'Polar Bear': categoryTarget['Polar Bear(Beginner)'] || 0,
+                    'Reindeer': categoryTarget['Reindeer (Intermediate)'] || 0,
+                    'Leopard': categoryTarget['Leopard (Pro Level)'] || 0
+                };
+            });
+
+            // Process athlete data efficiently
             enrichedData = athleteData.map(athlete => {
-                const levelInfo = levelsData.find(l => l.athlete_id === athlete.athlete_id);
-                const category = levelInfo ? (levelInfo[' Category '] || levelInfo['Category'] || 'Unknown') : 'Unknown';
+                const category = levelLookup[athlete.athlete_id] || 'Unknown';
                 
-                // Calculate monthly completion
-                const monthlyCompletion = months.map((month, index) => {
+                // Determine category type once
+                const categoryType = category.includes('Polar Bear') ? 'Polar Bear' :
+                                   category.includes('Reindeer') ? 'Reindeer' :
+                                   category.includes('Leopard') ? 'Leopard' : 'Unknown';
+                
+                let completedMonths = 0;
+                let totalActivityDistance = 0;
+                
+                // Single loop through months for all calculations
+                for (let i = 0; i < months.length; i++) {
+                    const month = months[i];
                     const snowballValue = athlete[`${month}_snowball`] || 0;
-                    const categoryTarget = categoryTargets[index];
-                    let target = 0;
+                    const target = targetLookup[i] ? targetLookup[i][categoryType] : 0;
                     
-                    if (categoryTarget) {
-                        if (category.includes('Polar Bear')) {
-                            target = categoryTarget['Polar Bear(Beginner)'] || 0;
-                        } else if (category.includes('Reindeer')) {
-                            target = categoryTarget['Reindeer (Intermediate)'] || 0;
-                        } else if (category.includes('Leopard')) {
-                            target = categoryTarget['Leopard (Pro Level)'] || 0;
-                        }
+                    if (snowballValue >= target && target > 0) {
+                        completedMonths++;
                     }
                     
-                    return {
-                        month,
-                        target,
-                        achieved: snowballValue,
-                        completed: snowballValue >= target,
-                        percentage: target > 0 ? (snowballValue / target) * 100 : 0
-                    };
-                });
-                
-                const completedMonths = monthlyCompletion.filter(m => m.completed).length;
-                const totalActivityDistance = activities.reduce((sum, activity) => {
-                    return sum + months.reduce((monthSum, month) => {
-                        return monthSum + (athlete[`${month}_${activity}`] || 0);
-                    }, 0);
-                }, 0);
+                    // Calculate total activity distance
+                    totalActivityDistance += (athlete[`${month}_Walk`] || 0) + 
+                                           (athlete[`${month}_Run`] || 0) + 
+                                           (athlete[`${month}_Ride`] || 0);
+                }
 
                 return {
-                    ...athlete,
+                    athlete_id: athlete.athlete_id,
+                    firstname: athlete.firstname,
+                    lastname: athlete.lastname,
                     category,
-                    monthlyCompletion,
                     completedMonths,
                     qualifiesForTarget: completedMonths >= 10,
                     completionRate: (completedMonths / 12) * 100,
-                    totalActivityDistance
+                    totalActivityDistance,
+                    // Keep reference to original data for detailed calculations
+                    _originalData: athlete
                 };
             });
         }
@@ -534,16 +549,28 @@
         function renderTargetChart() {
             const ctx = document.getElementById('targetChart').getContext('2d');
             
-            // Calculate monthly averages by category
+            // Pre-group athletes by category for efficiency
+            const categoryGroups = {
+                'Polar Bear': enrichedData.filter(a => a.category.includes('Polar Bear')),
+                'Reindeer': enrichedData.filter(a => a.category.includes('Reindeer')),
+                'Leopard': enrichedData.filter(a => a.category.includes('Leopard'))
+            };
+
             const categories = ['Polar Bear(Beginner)', 'Reindeer (Intermediate)', 'Leopard (Pro Level)'];
+            const categoryKeys = ['Polar Bear', 'Reindeer', 'Leopard'];
+            
             const datasets = categories.map((category, index) => {
-                const categoryAthletes = enrichedData.filter(a => a.category.includes(category.split('(')[0]));
-                const monthlyAvgs = months.map((month, monthIndex) => {
-                    const total = categoryAthletes.reduce((sum, athlete) => {
-                        return sum + (athlete[`${month}_snowball`] || 0);
-                    }, 0);
-                    return categoryAthletes.length > 0 ? total / categoryAthletes.length : 0;
-                });
+                const categoryAthletes = categoryGroups[categoryKeys[index]] || [];
+                const monthlyAvgs = [];
+                
+                for (let monthIndex = 0; monthIndex < months.length; monthIndex++) {
+                    const month = months[monthIndex];
+                    let total = 0;
+                    for (let i = 0; i < categoryAthletes.length; i++) {
+                        total += categoryAthletes[i]._originalData[`${month}_snowball`] || 0;
+                    }
+                    monthlyAvgs.push(categoryAthletes.length > 0 ? total / categoryAthletes.length : 0);
+                }
 
                 const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1'];
                 return {
@@ -556,14 +583,11 @@
                 };
             });
 
-            // Add target lines
+            // Add target lines efficiently
             const targetDatasets = categories.map((category, index) => {
-                const targets = monthAbbr.map((month, monthIndex) => {
-                    const categoryTarget = categoryTargets[monthIndex];
-                    return categoryTarget ? categoryTarget[category] : 0;
-                });
-
+                const targets = categoryTargets.map(categoryTarget => categoryTarget[category] || 0);
                 const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1'];
+                
                 return {
                     label: category + ' Target',
                     data: targets,
@@ -636,13 +660,14 @@
         function showLeaderboard(activity) {
             // Update active button
             document.querySelectorAll('.activity-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
+            document.querySelector(`.activity-btn[onclick*="${activity}"]`).classList.add('active');
 
-            // Calculate total distance for the activity
+            // Calculate total distance for the activity efficiently
             const leaderboard = enrichedData.map(athlete => {
-                const totalDistance = months.reduce((sum, month) => {
-                    return sum + (athlete[`${month}_${activity}`] || 0);
-                }, 0);
+                let totalDistance = 0;
+                for (let i = 0; i < months.length; i++) {
+                    totalDistance += athlete._originalData[`${months[i]}_${activity}`] || 0;
+                }
                 
                 return {
                     name: `${athlete.firstname} ${athlete.lastname}`,
