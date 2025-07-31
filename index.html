@@ -590,34 +590,41 @@
             </div>
 
             <div class="prediction-section">
-                <div class="chart-title">🔮 December Prediction & Action Required</div>
-                <div class="prediction-stats">
-                    <div class="prediction-card success">
-                        <div class="prediction-icon">✅</div>
-                        <div class="prediction-info">
-                            <div class="prediction-number" id="likelyFinishers">0</div>
-                            <div class="prediction-label">Likely to Finish<br>(8+ months completed)</div>
+                <div class="prediction-layout-1">
+                    <div class="chart-title">🔮 December Finish Prediction</div>
+                    <div class="prediction-stats">
+                        <div class="prediction-card success">
+                            <div class="prediction-icon">✅</div>
+                            <div class="prediction-info">
+                                <div class="prediction-number" id="likelyFinishers">0</div>
+                                <div class="prediction-label">Likely to Finish<br>(8+ months completed)</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="prediction-card warning">
-                        <div class="prediction-icon">⚠️</div>
-                        <div class="prediction-info">
-                            <div class="prediction-number" id="needMotivation">0</div>
-                            <div class="prediction-label">Need Extra Push<br>(5-7 months completed)</div>
+                        <div class="prediction-card warning">
+                            <div class="prediction-icon">⚠️</div>
+                            <div class="prediction-info">
+                                <div class="prediction-number" id="needMotivation">0</div>
+                                <div class="prediction-label">Need Extra Push<br>(5-7 months completed)</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="prediction-card danger">
-                        <div class="prediction-icon">🚨</div>
-                        <div class="prediction-info">
-                            <div class="prediction-number" id="criticalRisk">0</div>
-                            <div class="prediction-label">Critical Risk<br>(< 5 months completed)</div>
+                        <div class="prediction-card danger">
+                            <div class="prediction-icon">🚨</div>
+                            <div class="prediction-info">
+                                <div class="prediction-number" id="criticalRisk">0</div>
+                                <div class="prediction-label">Critical Risk<br>(< 5 months completed)</div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="action-required">
-                    <h4>🎯 Athletes Requiring Immediate Attention</h4>
-                    <div id="actionList"></div>
+                <div class="prediction-layout-2">
+                    <div class="chart-title">⚠️ Athletes Need Extra Motivation</div>
+                    <div class="motivation-grid" id="motivationGrid"></div>
+                </div>
+                
+                <div class="prediction-layout-3">
+                    <div class="chart-title">🚨 Critical Action Required - Immediate Attention</div>
+                    <div class="critical-list" id="criticalList"></div>
                 </div>
             </div>
         </div>
@@ -1030,12 +1037,12 @@
 
         function renderPredictionSection() {
             // Current month (assuming we're analyzing data up to current point)
-            // Count completed months for each athlete
             let likelyFinishers = 0;
             let needMotivation = 0;
             let criticalRisk = 0;
             
-            const actionItems = [];
+            const motivationItems = [];
+            const criticalItems = [];
             
             enrichedData.forEach(athlete => {
                 const completedMonths = athlete.completedMonths;
@@ -1046,31 +1053,26 @@
                 } else if (completedMonths >= 5) {
                     needMotivation++; // Need extra push to reach 10 months
                     
-                    // Calculate how many more months they need
                     const monthsNeeded = 10 - completedMonths;
-                    const remainingMonths = 12 - getCurrentMonth(); // Assuming we can track current month
+                    const progressPercentage = (completedMonths / 12) * 100;
                     
-                    actionItems.push({
+                    motivationItems.push({
                         name: `${athlete.firstname} ${athlete.lastname}`,
                         category: athlete.category,
                         completedMonths: completedMonths,
                         monthsNeeded: monthsNeeded,
-                        remainingMonths: Math.max(remainingMonths, monthsNeeded), // Approximate remaining months
-                        urgency: monthsNeeded >= remainingMonths ? 'high' : 'medium'
+                        progressPercentage: progressPercentage
                     });
                 } else {
                     criticalRisk++; // Critical risk of not completing
                     
                     const monthsNeeded = 10 - completedMonths;
-                    const remainingMonths = 12 - getCurrentMonth();
                     
-                    actionItems.push({
+                    criticalItems.push({
                         name: `${athlete.firstname} ${athlete.lastname}`,
                         category: athlete.category,
                         completedMonths: completedMonths,
-                        monthsNeeded: monthsNeeded,
-                        remainingMonths: Math.max(remainingMonths, monthsNeeded),
-                        urgency: 'high'
+                        monthsNeeded: monthsNeeded
                     });
                 }
             });
@@ -1080,42 +1082,52 @@
             document.getElementById('needMotivation').textContent = needMotivation;
             document.getElementById('criticalRisk').textContent = criticalRisk;
             
-            // Sort action items by urgency and months needed
-            actionItems.sort((a, b) => {
-                if (a.urgency === 'high' && b.urgency === 'medium') return -1;
-                if (a.urgency === 'medium' && b.urgency === 'high') return 1;
-                return b.monthsNeeded - a.monthsNeeded;
-            });
-            
-            // Render action items
-            const actionHtml = actionItems.map(item => {
-                const urgencyClass = item.urgency === 'high' ? 'urgency-high' : 'urgency-medium';
-                const urgencyIcon = item.urgency === 'high' ? '🚨' : '⚠️';
-                
-                return `
-                    <div class="action-item ${urgencyClass}">
-                        <div class="action-athlete-info">
-                            <div class="action-athlete-name">${urgencyIcon} ${item.name}</div>
-                            <div class="action-athlete-details">
-                                ${item.category} | Completed: ${item.completedMonths}/12 months
+            // Render Layout 2 - Motivation Grid
+            const motivationHtml = motivationItems.map(item => `
+                <div class="motivation-card">
+                    <div class="motivation-athlete">
+                        <div class="motivation-info">
+                            <h4>⚠️ ${item.name}</h4>
+                            <div class="motivation-details">
+                                ${item.category}<br>
+                                Completed: ${item.completedMonths}/12 months
                             </div>
                         </div>
-                        <div class="action-progress">
-                            <div class="months-needed">Needs ${item.monthsNeeded} more months</div>
-                            <div class="remaining-months">Target: 10+ months for qualification</div>
+                        <div class="motivation-progress">
+                            Needs ${item.monthsNeeded} more
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: ${item.progressPercentage}%"></div>
+                            </div>
                         </div>
                     </div>
-                `;
-            }).join('');
+                </div>
+            `).join('');
             
-            document.getElementById('actionList').innerHTML = actionHtml || '<p style="text-align: center; color: #48bb78; font-weight: 600;">🎉 All athletes are on track!</p>';
-        }
-        
-        function getCurrentMonth() {
-            // Simple logic to determine current month based on data
-            // You can modify this based on your actual data or current date
-            const currentDate = new Date();
-            return currentDate.getMonth() + 1; // Returns 1-12
+            document.getElementById('motivationGrid').innerHTML = motivationHtml || 
+                '<p style="text-align: center; color: #48bb78; font-weight: 600; font-size: 1.2rem;">🎉 No athletes need extra motivation!</p>';
+            
+            // Render Layout 3 - Critical List
+            const criticalHtml = criticalItems.map(item => `
+                <div class="critical-item">
+                    <div class="critical-athlete">
+                        <div class="critical-info">
+                            <h4>${item.name}</h4>
+                            <div class="critical-details">
+                                <strong>Category:</strong> ${item.category}<br>
+                                <strong>Current Progress:</strong> ${item.completedMonths}/12 months completed<br>
+                                <strong>Gap to Target:</strong> ${item.monthsNeeded} months behind qualification
+                            </div>
+                        </div>
+                        <div class="critical-stats">
+                            <div class="critical-months">${item.monthsNeeded}</div>
+                            <div class="critical-status">URGENT</div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            document.getElementById('criticalList').innerHTML = criticalHtml || 
+                '<p style="text-align: center; color: #48bb78; font-weight: 600; font-size: 1.2rem;">🎉 No athletes in critical risk!</p>';
         }
     </script>
 </body>
