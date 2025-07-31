@@ -590,41 +590,79 @@
             </div>
 
             <div class="prediction-section">
-                <div class="prediction-layout-1">
-                    <div class="chart-title">🔮 December Finish Prediction</div>
-                    <div class="prediction-stats">
-                        <div class="prediction-card success">
-                            <div class="prediction-icon">✅</div>
-                            <div class="prediction-info">
-                                <div class="prediction-number" id="likelyFinishers">0</div>
-                                <div class="prediction-label">Likely to Finish<br>(8+ months completed)</div>
-                            </div>
-                        </div>
-                        <div class="prediction-card warning">
-                            <div class="prediction-icon">⚠️</div>
-                            <div class="prediction-info">
-                                <div class="prediction-number" id="needMotivation">0</div>
-                                <div class="prediction-label">Need Extra Push<br>(5-7 months completed)</div>
-                            </div>
-                        </div>
-                        <div class="prediction-card danger">
-                            <div class="prediction-icon">🚨</div>
-                            <div class="prediction-info">
-                                <div class="prediction-number" id="criticalRisk">0</div>
-                                <div class="prediction-label">Critical Risk<br>(< 5 months completed)</div>
-                            </div>
-                        </div>
+                <div class="prediction-tables-container">
+                    <!-- Table 1: December Prediction Summary -->
+                    <div class="prediction-table-1">
+                        <div class="table-title">🔮 December Finish Prediction Summary</div>
+                        <table class="prediction-summary-table">
+                            <thead>
+                                <tr>
+                                    <th>Status</th>
+                                    <th>Count</th>
+                                    <th>Criteria</th>
+                                    <th>Probability</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="success-row">
+                                    <td>✅ Likely to Finish</td>
+                                    <td class="count-cell" id="likelyFinishersTable">0</td>
+                                    <td>8+ months completed</td>
+                                    <td class="probability-high">Very High</td>
+                                </tr>
+                                <tr class="warning-row">
+                                    <td>⚠️ Need Extra Push</td>
+                                    <td class="count-cell" id="needMotivationTable">0</td>
+                                    <td>5-7 months completed</td>
+                                    <td class="probability-medium">Medium</td>
+                                </tr>
+                                <tr class="danger-row">
+                                    <td>🚨 Critical Risk</td>
+                                    <td class="count-cell" id="criticalRiskTable">0</td>
+                                    <td>< 5 months completed</td>
+                                    <td class="probability-low">Low</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-                
-                <div class="prediction-layout-2">
-                    <div class="chart-title">⚠️ Athletes Need Extra Motivation</div>
-                    <div class="motivation-grid" id="motivationGrid"></div>
-                </div>
-                
-                <div class="prediction-layout-3">
-                    <div class="chart-title">🚨 Critical Action Required - Immediate Attention</div>
-                    <div class="critical-list" id="criticalList"></div>
+
+                    <!-- Table 2: Athletes Need Extra Motivation -->
+                    <div class="prediction-table-2">
+                        <div class="table-title">⚠️ Athletes Need Extra Motivation (5-7 months completed)</div>
+                        <table class="motivation-table">
+                            <thead>
+                                <tr>
+                                    <th>Athlete Name</th>
+                                    <th>Category</th>
+                                    <th>Completed</th>
+                                    <th>Needs</th>
+                                    <th>Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody id="motivationTableBody">
+                                <!-- Data will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Table 3: Critical Risk Athletes -->
+                    <div class="prediction-table-3">
+                        <div class="table-title">🚨 Critical Risk Athletes (< 5 months completed)</div>
+                        <table class="critical-table">
+                            <thead>
+                                <tr>
+                                    <th>Athlete Name</th>
+                                    <th>Category</th>
+                                    <th>Completed</th>
+                                    <th>Needs</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="criticalTableBody">
+                                <!-- Data will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1036,7 +1074,6 @@
         }
 
         function renderPredictionSection() {
-            // Current month (assuming we're analyzing data up to current point)
             let likelyFinishers = 0;
             let needMotivation = 0;
             let criticalRisk = 0;
@@ -1047,12 +1084,10 @@
             enrichedData.forEach(athlete => {
                 const completedMonths = athlete.completedMonths;
                 
-                // Prediction logic based on current completion
                 if (completedMonths >= 8) {
-                    likelyFinishers++; // Very likely to reach 10+ months
+                    likelyFinishers++;
                 } else if (completedMonths >= 5) {
-                    needMotivation++; // Need extra push to reach 10 months
-                    
+                    needMotivation++;
                     const monthsNeeded = 10 - completedMonths;
                     const progressPercentage = (completedMonths / 12) * 100;
                     
@@ -1064,8 +1099,7 @@
                         progressPercentage: progressPercentage
                     });
                 } else {
-                    criticalRisk++; // Critical risk of not completing
-                    
+                    criticalRisk++;
                     const monthsNeeded = 10 - completedMonths;
                     
                     criticalItems.push({
@@ -1077,57 +1111,43 @@
                 }
             });
             
-            // Update prediction stats
-            document.getElementById('likelyFinishers').textContent = likelyFinishers;
-            document.getElementById('needMotivation').textContent = needMotivation;
-            document.getElementById('criticalRisk').textContent = criticalRisk;
+            // Update summary table
+            document.getElementById('likelyFinishersTable').textContent = likelyFinishers;
+            document.getElementById('needMotivationTable').textContent = needMotivation;
+            document.getElementById('criticalRiskTable').textContent = criticalRisk;
             
-            // Render Layout 2 - Motivation Grid
-            const motivationHtml = motivationItems.map(item => `
-                <div class="motivation-card">
-                    <div class="motivation-athlete">
-                        <div class="motivation-info">
-                            <h4>⚠️ ${item.name}</h4>
-                            <div class="motivation-details">
-                                ${item.category}<br>
-                                Completed: ${item.completedMonths}/12 months
-                            </div>
+            // Render motivation table
+            const motivationTableHtml = motivationItems.map((item, index) => `
+                <tr>
+                    <td class="athlete-name-cell">${item.name}</td>
+                    <td class="category-cell">${item.category}</td>
+                    <td class="completed-cell">${item.completedMonths}/12</td>
+                    <td class="needs-cell">${item.monthsNeeded} more</td>
+                    <td class="progress-cell">
+                        <div class="progress-bar-small">
+                            <div class="progress-fill-small" style="width: ${item.progressPercentage}%"></div>
                         </div>
-                        <div class="motivation-progress">
-                            Needs ${item.monthsNeeded} more
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: ${item.progressPercentage}%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        ${Math.round(item.progressPercentage)}%
+                    </td>
+                </tr>
             `).join('');
             
-            document.getElementById('motivationGrid').innerHTML = motivationHtml || 
-                '<p style="text-align: center; color: #48bb78; font-weight: 600; font-size: 1.2rem;">🎉 No athletes need extra motivation!</p>';
+            document.getElementById('motivationTableBody').innerHTML = motivationTableHtml || 
+                '<tr><td colspan="5" style="text-align: center; color: #48bb78; font-weight: 600; padding: 20px;">🎉 No athletes need extra motivation!</td></tr>';
             
-            // Render Layout 3 - Critical List
-            const criticalHtml = criticalItems.map(item => `
-                <div class="critical-item">
-                    <div class="critical-athlete">
-                        <div class="critical-info">
-                            <h4>${item.name}</h4>
-                            <div class="critical-details">
-                                <strong>Category:</strong> ${item.category}<br>
-                                <strong>Current Progress:</strong> ${item.completedMonths}/12 months completed<br>
-                                <strong>Gap to Target:</strong> ${item.monthsNeeded} months behind qualification
-                            </div>
-                        </div>
-                        <div class="critical-stats">
-                            <div class="critical-months">${item.monthsNeeded}</div>
-                            <div class="critical-status">URGENT</div>
-                        </div>
-                    </div>
-                </div>
+            // Render critical table
+            const criticalTableHtml = criticalItems.map((item, index) => `
+                <tr>
+                    <td class="athlete-name-cell">${item.name}</td>
+                    <td class="category-cell">${item.category}</td>
+                    <td class="completed-cell">${item.completedMonths}/12</td>
+                    <td class="needs-cell">${item.monthsNeeded} more</td>
+                    <td><span class="status-badge">URGENT</span></td>
+                </tr>
             `).join('');
             
-            document.getElementById('criticalList').innerHTML = criticalHtml || 
-                '<p style="text-align: center; color: #48bb78; font-weight: 600; font-size: 1.2rem;">🎉 No athletes in critical risk!</p>';
+            document.getElementById('criticalTableBody').innerHTML = criticalTableHtml || 
+                '<tr><td colspan="5" style="text-align: center; color: #48bb78; font-weight: 600; padding: 20px;">🎉 No athletes in critical risk!</td></tr>';
         }
     </script>
 </body>
